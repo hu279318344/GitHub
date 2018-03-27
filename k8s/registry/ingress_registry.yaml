@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: registry
+  namespace: kube-system
+  annotations:
+    kubernetes.io/ingress.class: traefik
+spec:
+  rules:
+  - host:  registry.galen.site
+    http:
+      paths:
+      - path: 
+        backend:
+          serviceName: kube-registry
+          servicePort: 5000

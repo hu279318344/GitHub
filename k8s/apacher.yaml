@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: apacher
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        run: apacher
+    spec:
+      containers:
+      - name: apacher
+        image: 10.10.10.21:5000/php71-apache
+        ports:
+        - containerPort: 80

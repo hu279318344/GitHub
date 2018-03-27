@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: emojivoto
+  namespace: emojivoto
+  annotations:
+    kubernetes.io/ingress.class: traefik
+spec:
+  rules:
+  - host: web.galen.site
+    http:
+      paths:
+      - path: 
+        backend:
+          serviceName: web-svc
+          servicePort: 80

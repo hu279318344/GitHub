@@ -1,0 +1,1136 @@
+-- Logs begin at Wed 2017-11-22 13:26:34 CST, end at Wed 2017-11-22 23:04:14 CST. --
+Nov 22 22:58:40 master1 kube-apiserver[2268]: I1122 22:58:40.760527    2268 trace.go:61] Trace "Update /api/v1/namespaces/kube-system/endpoints/kube-controller-manager" (started 2017-11-22 22:58:40.089091817 +0800 CST):
+Nov 22 22:58:40 master1 kube-apiserver[2268]: [37.728µs] [37.728µs] About to convert to expected version
+Nov 22 22:58:40 master1 kube-apiserver[2268]: [77.247µs] [39.519µs] Conversion done
+Nov 22 22:58:40 master1 kube-apiserver[2268]: [86.824µs] [9.577µs] About to store object in database
+Nov 22 22:58:40 master1 kube-apiserver[2268]: [671.179852ms] [671.093028ms] Object stored in database
+Nov 22 22:58:40 master1 kube-apiserver[2268]: [671.190789ms] [10.937µs] Self-link added
+Nov 22 22:58:40 master1 kube-apiserver[2268]: "Update /api/v1/namespaces/kube-system/endpoints/kube-controller-manager" [671.350567ms] [159.778µs] END
+Nov 22 22:58:40 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 329.963136ms)[0m
+Nov 22 22:58:40 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:58:40 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 330.066625ms)[0m
+Nov 22 22:58:40 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:58:41 master1 kube-apiserver[2268]: I1122 22:58:41.080091    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Node" (started 2017-11-22 22:58:40.566330953 +0800 CST):
+Nov 22 22:58:41 master1 kube-apiserver[2268]: [162.248µs] [162.248µs] initial value restored
+Nov 22 22:58:41 master1 kube-apiserver[2268]: [2.282048ms] [2.1198ms] Transaction prepared
+Nov 22 22:58:41 master1 kube-apiserver[2268]: [513.534292ms] [511.252244ms] Transaction committed
+Nov 22 22:58:41 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Node" [513.688287ms] [153.995µs] END
+Nov 22 22:58:41 master1 kube-apiserver[2268]: I1122 22:58:41.080129    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Endpoints" (started 2017-11-22 22:58:40.572555883 +0800 CST):
+Nov 22 22:58:41 master1 kube-apiserver[2268]: [102.801µs] [102.801µs] initial value restored
+Nov 22 22:58:41 master1 kube-apiserver[2268]: [340.65µs] [237.849µs] Transaction prepared
+Nov 22 22:58:41 master1 kube-apiserver[2268]: [507.443033ms] [507.102383ms] Transaction committed
+Nov 22 22:58:41 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Endpoints" [507.490987ms] [47.954µs] END
+Nov 22 22:58:41 master1 kube-apiserver[2268]: I1122 22:58:41.080395    2268 trace.go:61] Trace "Update /api/v1/namespaces/kube-system/endpoints/kube-scheduler" (started 2017-11-22 22:58:40.572394816 +0800 CST):
+Nov 22 22:58:41 master1 kube-apiserver[2268]: [34.518µs] [34.518µs] About to convert to expected version
+Nov 22 22:58:41 master1 kube-apiserver[2268]: [77.937µs] [43.419µs] Conversion done
+Nov 22 22:58:41 master1 kube-apiserver[2268]: [86.668µs] [8.731µs] About to store object in database
+Nov 22 22:58:41 master1 kube-apiserver[2268]: [507.770395ms] [507.683727ms] Object stored in database
+Nov 22 22:58:41 master1 kube-apiserver[2268]: [507.781307ms] [10.912µs] Self-link added
+Nov 22 22:58:41 master1 kube-apiserver[2268]: "Update /api/v1/namespaces/kube-system/endpoints/kube-scheduler" [507.905692ms] [124.385µs] END
+Nov 22 22:58:47 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 214.102µs)[0m
+Nov 22 22:58:47 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:58:47 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 339.592µs)[0m
+Nov 22 22:58:47 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:58:48 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 52.928555ms)[0m
+Nov 22 22:58:48 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:58:48 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 53.017104ms)[0m
+Nov 22 22:58:48 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:00 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 377.0266ms)[0m
+Nov 22 22:59:00 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:00 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 377.134842ms)[0m
+Nov 22 22:59:00 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:00 master1 kube-apiserver[2268]: I1122 22:59:00.855903    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Endpoints" (started 2017-11-22 22:59:00.110940656 +0800 CST):
+Nov 22 22:59:00 master1 kube-apiserver[2268]: [59.373µs] [59.373µs] initial value restored
+Nov 22 22:59:00 master1 kube-apiserver[2268]: [217.297µs] [157.924µs] Transaction prepared
+Nov 22 22:59:00 master1 kube-apiserver[2268]: [744.828628ms] [744.611331ms] Transaction committed
+Nov 22 22:59:00 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Endpoints" [744.878673ms] [50.045µs] END
+Nov 22 22:59:00 master1 kube-apiserver[2268]: I1122 22:59:00.856195    2268 trace.go:61] Trace "Update /api/v1/namespaces/kube-system/endpoints/kube-scheduler" (started 2017-11-22 22:59:00.110827858 +0800 CST):
+Nov 22 22:59:00 master1 kube-apiserver[2268]: [22.81µs] [22.81µs] About to convert to expected version
+Nov 22 22:59:00 master1 kube-apiserver[2268]: [53.611µs] [30.801µs] Conversion done
+Nov 22 22:59:00 master1 kube-apiserver[2268]: [59.651µs] [6.04µs] About to store object in database
+Nov 22 22:59:00 master1 kube-apiserver[2268]: [745.120238ms] [745.060587ms] Object stored in database
+Nov 22 22:59:00 master1 kube-apiserver[2268]: [745.128455ms] [8.217µs] Self-link added
+Nov 22 22:59:00 master1 kube-apiserver[2268]: "Update /api/v1/namespaces/kube-system/endpoints/kube-scheduler" [745.287307ms] [158.852µs] END
+Nov 22 22:59:01 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 65.118712ms)[0m
+Nov 22 22:59:01 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:01 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 65.221485ms)[0m
+Nov 22 22:59:01 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:01 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 103.62313ms)[0m
+Nov 22 22:59:01 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:01 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 103.68498ms)[0m
+Nov 22 22:59:01 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:01 master1 kube-apiserver[2268]: I1122 22:59:01.980624    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Node" (started 2017-11-22 22:59:01.250750219 +0800 CST):
+Nov 22 22:59:01 master1 kube-apiserver[2268]: [157.306µs] [157.306µs] initial value restored
+Nov 22 22:59:01 master1 kube-apiserver[2268]: [2.035123ms] [1.877817ms] Transaction prepared
+Nov 22 22:59:01 master1 kube-apiserver[2268]: [729.58072ms] [727.545597ms] Transaction committed
+Nov 22 22:59:01 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Node" [729.783808ms] [203.088µs] END
+Nov 22 22:59:06 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 191.070506ms)[0m
+Nov 22 22:59:06 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:06 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 191.457813ms)[0m
+Nov 22 22:59:06 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:06 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 55.745069ms)[0m
+Nov 22 22:59:06 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:06 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 55.844132ms)[0m
+Nov 22 22:59:06 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:07 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 247.120303ms)[0m
+Nov 22 22:59:07 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:07 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 247.23124ms)[0m
+Nov 22 22:59:07 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:07 master1 kube-apiserver[2268]: I1122 22:59:07.563516    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Endpoints" (started 2017-11-22 22:59:07.060109623 +0800 CST):
+Nov 22 22:59:07 master1 kube-apiserver[2268]: [67.826µs] [67.826µs] initial value restored
+Nov 22 22:59:07 master1 kube-apiserver[2268]: [310.638µs] [242.812µs] Transaction prepared
+Nov 22 22:59:07 master1 kube-apiserver[2268]: [503.257338ms] [502.9467ms] Transaction committed
+Nov 22 22:59:07 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Endpoints" [503.315442ms] [58.104µs] END
+Nov 22 22:59:07 master1 kube-apiserver[2268]: I1122 22:59:07.563827    2268 trace.go:61] Trace "Update /api/v1/namespaces/kube-system/endpoints/kube-scheduler" (started 2017-11-22 22:59:07.059970883 +0800 CST):
+Nov 22 22:59:07 master1 kube-apiserver[2268]: [29.39µs] [29.39µs] About to convert to expected version
+Nov 22 22:59:07 master1 kube-apiserver[2268]: [67.39µs] [38µs] Conversion done
+Nov 22 22:59:07 master1 kube-apiserver[2268]: [74.507µs] [7.117µs] About to store object in database
+Nov 22 22:59:07 master1 kube-apiserver[2268]: [503.596637ms] [503.52213ms] Object stored in database
+Nov 22 22:59:07 master1 kube-apiserver[2268]: [503.60814ms] [11.503µs] Self-link added
+Nov 22 22:59:07 master1 kube-apiserver[2268]: "Update /api/v1/namespaces/kube-system/endpoints/kube-scheduler" [503.772337ms] [164.197µs] END
+Nov 22 22:59:07 master1 kube-apiserver[2268]: I1122 22:59:07.970035    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Node" (started 2017-11-22 22:59:07.069768393 +0800 CST):
+Nov 22 22:59:07 master1 kube-apiserver[2268]: [61.822µs] [61.822µs] initial value restored
+Nov 22 22:59:07 master1 kube-apiserver[2268]: [930.578µs] [868.756µs] Transaction prepared
+Nov 22 22:59:08 master1 kube-apiserver[2268]: [899.957332ms] [899.026754ms] Transaction committed
+Nov 22 22:59:08 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Node" [900.159947ms] [202.615µs] END
+Nov 22 22:59:09 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 207.414934ms)[0m
+Nov 22 22:59:09 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:09 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 207.514209ms)[0m
+Nov 22 22:59:09 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:09 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 103.84927ms)[0m
+Nov 22 22:59:09 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:09 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 103.866308ms)[0m
+Nov 22 22:59:09 master1 kube-apiserver[2268]: I1122 22:59:09.397812    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Endpoints" (started 2017-11-22 22:59:08.760476905 +0800 CST):
+Nov 22 22:59:09 master1 kube-apiserver[2268]: [85.575µs] [85.575µs] initial value restored
+Nov 22 22:59:09 master1 kube-apiserver[2268]: [328.736µs] [243.161µs] Transaction prepared
+Nov 22 22:59:09 master1 kube-apiserver[2268]: [637.175726ms] [636.84699ms] Transaction committed
+Nov 22 22:59:09 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Endpoints" [637.239343ms] [63.617µs] END
+Nov 22 22:59:09 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:09 master1 kube-apiserver[2268]: I1122 22:59:09.579451    2268 trace.go:61] Trace "Update /api/v1/namespaces/kube-system/endpoints/kube-controller-manager" (started 2017-11-22 22:59:08.76026788 +0800 CST):
+Nov 22 22:59:09 master1 kube-apiserver[2268]: [65.399µs] [65.399µs] About to convert to expected version
+Nov 22 22:59:09 master1 kube-apiserver[2268]: [120.422µs] [55.023µs] Conversion done
+Nov 22 22:59:09 master1 kube-apiserver[2268]: [128.202µs] [7.78µs] About to store object in database
+Nov 22 22:59:09 master1 kube-apiserver[2268]: [637.590233ms] [637.462031ms] Object stored in database
+Nov 22 22:59:09 master1 kube-apiserver[2268]: [637.603993ms] [13.76µs] Self-link added
+Nov 22 22:59:09 master1 kube-apiserver[2268]: "Update /api/v1/namespaces/kube-system/endpoints/kube-controller-manager" [819.066666ms] [181.462673ms] END
+Nov 22 22:59:09 master1 kube-apiserver[2268]: I1122 22:59:09.870379    2268 trace.go:61] Trace "List /apis/extensions/v1beta1/thirdpartyresources" (started 2017-11-22 22:59:08.829044745 +0800 CST):
+Nov 22 22:59:09 master1 kube-apiserver[2268]: [15.003µs] [15.003µs] About to List from storage
+Nov 22 22:59:09 master1 kube-apiserver[2268]: [941.178024ms] [941.163021ms] Listing from storage done
+Nov 22 22:59:09 master1 kube-apiserver[2268]: [941.213615ms] [35.591µs] Self-linking done
+Nov 22 22:59:09 master1 kube-apiserver[2268]: [941.517092ms] [303.477µs] Writing http response done (0 items)
+Nov 22 22:59:09 master1 kube-apiserver[2268]: "List /apis/extensions/v1beta1/thirdpartyresources" [941.518847ms] [1.755µs] END
+Nov 22 22:59:09 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 27.55901ms)[0m
+Nov 22 22:59:09 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:09 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 27.681352ms)[0m
+Nov 22 22:59:09 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:11 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 197.629951ms)[0m
+Nov 22 22:59:11 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:11 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 197.736861ms)[0m
+Nov 22 22:59:11 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:12 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 65.863204ms)[0m
+Nov 22 22:59:12 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:12 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 65.969844ms)[0m
+Nov 22 22:59:12 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:14 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 1.844288ms)[0m
+Nov 22 22:59:14 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:14 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 1.93656ms)[0m
+Nov 22 22:59:14 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:21 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 284.467489ms)[0m
+Nov 22 22:59:21 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:21 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 284.576331ms)[0m
+Nov 22 22:59:21 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:21 master1 kube-apiserver[2268]: I1122 22:59:21.918489    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Endpoints" (started 2017-11-22 22:59:21.308315829 +0800 CST):
+Nov 22 22:59:21 master1 kube-apiserver[2268]: [116.81µs] [116.81µs] initial value restored
+Nov 22 22:59:21 master1 kube-apiserver[2268]: [386.208µs] [269.398µs] Transaction prepared
+Nov 22 22:59:21 master1 kube-apiserver[2268]: [609.93599ms] [609.549782ms] Transaction committed
+Nov 22 22:59:21 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Endpoints" [610.097412ms] [161.422µs] END
+Nov 22 22:59:21 master1 kube-apiserver[2268]: I1122 22:59:21.918785    2268 trace.go:61] Trace "Update /api/v1/namespaces/kube-system/endpoints/kube-scheduler" (started 2017-11-22 22:59:21.308151545 +0800 CST):
+Nov 22 22:59:21 master1 kube-apiserver[2268]: [35.164µs] [35.164µs] About to convert to expected version
+Nov 22 22:59:21 master1 kube-apiserver[2268]: [77.037µs] [41.873µs] Conversion done
+Nov 22 22:59:21 master1 kube-apiserver[2268]: [85.307µs] [8.27µs] About to store object in database
+Nov 22 22:59:21 master1 kube-apiserver[2268]: [610.374643ms] [610.289336ms] Object stored in database
+Nov 22 22:59:21 master1 kube-apiserver[2268]: [610.385155ms] [10.512µs] Self-link added
+Nov 22 22:59:22 master1 kube-apiserver[2268]: "Update /api/v1/namespaces/kube-system/endpoints/kube-scheduler" [610.552075ms] [166.92µs] END
+Nov 22 22:59:22 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 156.010465ms)[0m
+Nov 22 22:59:22 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:22 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 156.123181ms)[0m
+Nov 22 22:59:22 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:23 master1 kube-apiserver[2268]: I1122 22:59:23.272187    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Node" (started 2017-11-22 22:59:22.502446913 +0800 CST):
+Nov 22 22:59:23 master1 kube-apiserver[2268]: [195.072µs] [195.072µs] initial value restored
+Nov 22 22:59:23 master1 kube-apiserver[2268]: [2.063236ms] [1.868164ms] Transaction prepared
+Nov 22 22:59:23 master1 kube-apiserver[2268]: [769.522075ms] [767.458839ms] Transaction committed
+Nov 22 22:59:23 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Node" [769.658204ms] [136.129µs] END
+Nov 22 22:59:23 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 70.288978ms)[0m
+Nov 22 22:59:23 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:23 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 70.41666ms)[0m
+Nov 22 22:59:23 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:24 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 48.91683ms)[0m
+Nov 22 22:59:24 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:24 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 50.226005ms)[0m
+Nov 22 22:59:24 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:24 master1 kube-apiserver[2268]: I1122 22:59:24.502592    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Endpoints" (started 2017-11-22 22:59:23.924786006 +0800 CST):
+Nov 22 22:59:24 master1 kube-apiserver[2268]: [109.214µs] [109.214µs] initial value restored
+Nov 22 22:59:24 master1 kube-apiserver[2268]: [347.819µs] [238.605µs] Transaction prepared
+Nov 22 22:59:24 master1 kube-apiserver[2268]: [577.669724ms] [577.321905ms] Transaction committed
+Nov 22 22:59:24 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Endpoints" [577.711342ms] [41.618µs] END
+Nov 22 22:59:24 master1 kube-apiserver[2268]: I1122 22:59:24.502915    2268 trace.go:61] Trace "Update /api/v1/namespaces/kube-system/endpoints/kube-scheduler" (started 2017-11-22 22:59:23.924608366 +0800 CST):
+Nov 22 22:59:24 master1 kube-apiserver[2268]: [34.802µs] [34.802µs] About to convert to expected version
+Nov 22 22:59:24 master1 kube-apiserver[2268]: [78.364µs] [43.562µs] Conversion done
+Nov 22 22:59:24 master1 kube-apiserver[2268]: [86.95µs] [8.586µs] About to store object in database
+Nov 22 22:59:24 master1 kube-apiserver[2268]: [578.027274ms] [577.940324ms] Object stored in database
+Nov 22 22:59:24 master1 kube-apiserver[2268]: [578.034542ms] [7.268µs] Self-link added
+Nov 22 22:59:24 master1 kube-apiserver[2268]: "Update /api/v1/namespaces/kube-system/endpoints/kube-scheduler" [578.220489ms] [185.947µs] END
+Nov 22 22:59:24 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 98.016052ms)[0m
+Nov 22 22:59:24 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:24 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 98.128879ms)[0m
+Nov 22 22:59:24 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:25 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 37.471557ms)[0m
+Nov 22 22:59:25 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:25 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 37.588035ms)[0m
+Nov 22 22:59:25 master1 kube-apiserver[2268]: I1122 22:59:25.124732    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Endpoints" (started 2017-11-22 22:59:24.529524566 +0800 CST):
+Nov 22 22:59:25 master1 kube-apiserver[2268]: [120.49µs] [120.49µs] initial value restored
+Nov 22 22:59:25 master1 kube-apiserver[2268]: [396.317µs] [275.827µs] Transaction prepared
+Nov 22 22:59:25 master1 kube-apiserver[2268]: [595.056429ms] [594.660112ms] Transaction committed
+Nov 22 22:59:25 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Endpoints" [595.107264ms] [50.835µs] END
+Nov 22 22:59:25 master1 kube-apiserver[2268]: I1122 22:59:25.125042    2268 trace.go:61] Trace "Update /api/v1/namespaces/kube-system/endpoints/kube-controller-manager" (started 2017-11-22 22:59:24.529278325 +0800 CST):
+Nov 22 22:59:25 master1 kube-apiserver[2268]: [39.33µs] [39.33µs] About to convert to expected version
+Nov 22 22:59:25 master1 kube-apiserver[2268]: [125.103µs] [85.773µs] Conversion done
+Nov 22 22:59:25 master1 kube-apiserver[2268]: [136.93µs] [11.827µs] About to store object in database
+Nov 22 22:59:25 master1 kube-apiserver[2268]: [595.494097ms] [595.357167ms] Object stored in database
+Nov 22 22:59:25 master1 kube-apiserver[2268]: [595.503297ms] [9.2µs] Self-link added
+Nov 22 22:59:25 master1 kube-apiserver[2268]: "Update /api/v1/namespaces/kube-system/endpoints/kube-controller-manager" [595.666925ms] [163.628µs] END
+Nov 22 22:59:25 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:28 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 4.689044ms)[0m
+Nov 22 22:59:28 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:28 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 4.804558ms)[0m
+Nov 22 22:59:28 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:41 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 77.564094ms)[0m
+Nov 22 22:59:41 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:41 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 77.653416ms)[0m
+Nov 22 22:59:41 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:42 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 25.860119ms)[0m
+Nov 22 22:59:42 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:42 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 26.197567ms)[0m
+Nov 22 22:59:42 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:42 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 26.598239ms)[0m
+Nov 22 22:59:42 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:42 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 26.370884ms)[0m
+Nov 22 22:59:42 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:44 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 388.631848ms)[0m
+Nov 22 22:59:44 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:44 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 388.740958ms)[0m
+Nov 22 22:59:44 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:44 master1 kube-apiserver[2268]: I1122 22:59:44.352906    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Node" (started 2017-11-22 22:59:43.532679209 +0800 CST):
+Nov 22 22:59:44 master1 kube-apiserver[2268]: [223.3µs] [223.3µs] initial value restored
+Nov 22 22:59:44 master1 kube-apiserver[2268]: [3.18966ms] [2.96636ms] Transaction prepared
+Nov 22 22:59:44 master1 kube-apiserver[2268]: [819.94345ms] [816.75379ms] Transaction committed
+Nov 22 22:59:44 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Node" [820.132278ms] [188.828µs] END
+Nov 22 22:59:44 master1 kube-apiserver[2268]: I1122 22:59:44.702537    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Endpoints" (started 2017-11-22 22:59:43.668697454 +0800 CST):
+Nov 22 22:59:44 master1 kube-apiserver[2268]: [86.17µs] [86.17µs] initial value restored
+Nov 22 22:59:44 master1 kube-apiserver[2268]: [319.177µs] [233.007µs] Transaction prepared
+Nov 22 22:59:44 master1 kube-apiserver[2268]: [1.03369211s] [1.033372933s] Transaction committed
+Nov 22 22:59:44 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Endpoints" [1.033736111s] [44.001µs] END
+Nov 22 22:59:44 master1 kube-apiserver[2268]: I1122 22:59:44.702828    2268 trace.go:61] Trace "Update /api/v1/namespaces/kube-system/endpoints/kube-scheduler" (started 2017-11-22 22:59:43.668534381 +0800 CST):
+Nov 22 22:59:44 master1 kube-apiserver[2268]: [35.243µs] [35.243µs] About to convert to expected version
+Nov 22 22:59:44 master1 kube-apiserver[2268]: [78.457µs] [43.214µs] Conversion done
+Nov 22 22:59:44 master1 kube-apiserver[2268]: [86.275µs] [7.818µs] About to store object in database
+Nov 22 22:59:44 master1 kube-apiserver[2268]: [1.034047466s] [1.033961191s] Object stored in database
+Nov 22 22:59:44 master1 kube-apiserver[2268]: [1.034056346s] [8.88µs] Self-link added
+Nov 22 22:59:44 master1 kube-apiserver[2268]: "Update /api/v1/namespaces/kube-system/endpoints/kube-scheduler" [1.034207913s] [151.567µs] END
+Nov 22 22:59:47 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 22.226442ms)[0m
+Nov 22 22:59:47 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:47 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 22.404158ms)[0m
+Nov 22 22:59:47 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:48 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 199.281491ms)[0m
+Nov 22 22:59:48 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:48 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 199.4758ms)[0m
+Nov 22 22:59:48 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:49 master1 kube-apiserver[2268]: I1122 22:59:49.097942    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Node" (started 2017-11-22 22:59:48.590122914 +0800 CST):
+Nov 22 22:59:49 master1 kube-apiserver[2268]: [69.134µs] [69.134µs] initial value restored
+Nov 22 22:59:49 master1 kube-apiserver[2268]: [735.551µs] [666.417µs] Transaction prepared
+Nov 22 22:59:49 master1 kube-apiserver[2268]: [507.664808ms] [506.929257ms] Transaction committed
+Nov 22 22:59:49 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Node" [507.765485ms] [100.677µs] END
+Nov 22 22:59:49 master1 kube-apiserver[2268]: I1122 22:59:49.341039    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Endpoints" (started 2017-11-22 22:59:48.771488724 +0800 CST):
+Nov 22 22:59:49 master1 kube-apiserver[2268]: [98.333µs] [98.333µs] initial value restored
+Nov 22 22:59:49 master1 kube-apiserver[2268]: [376.19µs] [277.857µs] Transaction prepared
+Nov 22 22:59:49 master1 kube-apiserver[2268]: [569.422445ms] [569.046255ms] Transaction committed
+Nov 22 22:59:49 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Endpoints" [569.46259ms] [40.145µs] END
+Nov 22 22:59:49 master1 kube-apiserver[2268]: I1122 22:59:49.341327    2268 trace.go:61] Trace "Update /api/v1/namespaces/kube-system/endpoints/kube-scheduler" (started 2017-11-22 22:59:48.771269234 +0800 CST):
+Nov 22 22:59:49 master1 kube-apiserver[2268]: [35.24µs] [35.24µs] About to convert to expected version
+Nov 22 22:59:49 master1 kube-apiserver[2268]: [109.678µs] [74.438µs] Conversion done
+Nov 22 22:59:49 master1 kube-apiserver[2268]: [119.875µs] [10.197µs] About to store object in database
+Nov 22 22:59:49 master1 kube-apiserver[2268]: [569.816157ms] [569.696282ms] Object stored in database
+Nov 22 22:59:49 master1 kube-apiserver[2268]: [569.824855ms] [8.698µs] Self-link added
+Nov 22 22:59:49 master1 kube-apiserver[2268]: "Update /api/v1/namespaces/kube-system/endpoints/kube-scheduler" [569.977553ms] [152.698µs] END
+Nov 22 22:59:57 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 10.343445ms)[0m
+Nov 22 22:59:57 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 22:59:57 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 10.510299ms)[0m
+Nov 22 22:59:57 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:02 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 13.605204ms)[0m
+Nov 22 23:00:02 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:02 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 13.79265ms)[0m
+Nov 22 23:00:02 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:02 master1 systemd[1]: Started Session 182 of user root.
+-- Subject: Unit session-182.scope has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit session-182.scope has finished starting up.
+-- 
+-- The start-up result is done.
+Nov 22 23:00:02 master1 systemd[1]: Starting Session 182 of user root.
+-- Subject: Unit session-182.scope has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit session-182.scope has begun starting up.
+Nov 22 23:00:03 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 234.803329ms)[0m
+Nov 22 23:00:03 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:03 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 234.908694ms)[0m
+Nov 22 23:00:03 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:03 master1 CROND[15339]: (root) CMD (/usr/lib64/sa/sa1 1 1)
+Nov 22 23:00:03 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 95.230398ms)[0m
+Nov 22 23:00:03 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:03 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 95.339975ms)[0m
+Nov 22 23:00:03 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:04 master1 systemd[1]: Starting Docker Cleanup...
+-- Subject: Unit docker-cleanup.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit docker-cleanup.service has begun starting up.
+Nov 22 23:00:04 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 47.930016ms)[0m
+Nov 22 23:00:04 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:04 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 48.042062ms)[0m
+Nov 22 23:00:04 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:05 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 350.67922ms)[0m
+Nov 22 23:00:05 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:05 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 350.732784ms)[0m
+Nov 22 23:00:05 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:05 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 88.204259ms)[0m
+Nov 22 23:00:05 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:05 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 88.206397ms)[0m
+Nov 22 23:00:05 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:05 master1 kube-apiserver[2268]: I1122 23:00:05.480911    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Endpoints" (started 2017-11-22 23:00:04.293159525 +0800 CST):
+Nov 22 23:00:05 master1 kube-apiserver[2268]: [123.822µs] [123.822µs] initial value restored
+Nov 22 23:00:05 master1 kube-apiserver[2268]: [523.459µs] [399.637µs] Transaction prepared
+Nov 22 23:00:05 master1 kube-apiserver[2268]: [1.187599023s] [1.187075564s] Transaction committed
+Nov 22 23:00:05 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Endpoints" [1.187651598s] [52.575µs] END
+Nov 22 23:00:05 master1 kube-apiserver[2268]: I1122 23:00:05.481106    2268 trace.go:61] Trace "Get /api/v1/namespaces/kube-system/configmaps/kube-dns" (started 2017-11-22 23:00:04.974567784 +0800 CST):
+Nov 22 23:00:05 master1 kube-apiserver[2268]: "Get /api/v1/namespaces/kube-system/configmaps/kube-dns" [506.475838ms] [506.475838ms] END
+Nov 22 23:00:05 master1 kube-apiserver[2268]: I1122 23:00:05.483788    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Node" (started 2017-11-22 23:00:04.566699378 +0800 CST):
+Nov 22 23:00:05 master1 kube-apiserver[2268]: [86.02µs] [86.02µs] initial value restored
+Nov 22 23:00:05 master1 kube-apiserver[2268]: [843.397µs] [757.377µs] Transaction prepared
+Nov 22 23:00:05 master1 kube-apiserver[2268]: [916.773973ms] [915.930576ms] Transaction committed
+Nov 22 23:00:05 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Node" [916.991863ms] [217.89µs] END
+Nov 22 23:00:05 master1 kube-apiserver[2268]: I1122 23:00:05.488216    2268 trace.go:61] Trace "Update /api/v1/namespaces/kube-system/endpoints/kube-scheduler" (started 2017-11-22 23:00:04.292931119 +0800 CST):
+Nov 22 23:00:05 master1 kube-apiserver[2268]: [47.766µs] [47.766µs] About to convert to expected version
+Nov 22 23:00:05 master1 kube-apiserver[2268]: [101.856µs] [54.09µs] Conversion done
+Nov 22 23:00:05 master1 kube-apiserver[2268]: [111.743µs] [9.887µs] About to store object in database
+Nov 22 23:00:05 master1 kube-apiserver[2268]: [1.194950048s] [1.194838305s] Object stored in database
+Nov 22 23:00:05 master1 kube-apiserver[2268]: [1.194967734s] [17.686µs] Self-link added
+Nov 22 23:00:05 master1 kube-apiserver[2268]: "Update /api/v1/namespaces/kube-system/endpoints/kube-scheduler" [1.19517514s] [207.406µs] END
+Nov 22 23:00:06 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 76.036555ms)[0m
+Nov 22 23:00:06 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:06 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 76.136255ms)[0m
+Nov 22 23:00:06 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:06 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 9.881615ms)[0m
+Nov 22 23:00:06 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:06 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 9.981065ms)[0m
+Nov 22 23:00:06 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:06 master1 kube-apiserver[2268]: I1122 23:00:06.696435    2268 trace.go:61] Trace "List /api/v1/services" (started 2017-11-22 23:00:05.483080999 +0800 CST):
+Nov 22 23:00:06 master1 kube-apiserver[2268]: [17.057µs] [17.057µs] About to List from storage
+Nov 22 23:00:06 master1 kube-apiserver[2268]: [1.212751174s] [1.212734117s] Listing from storage done
+Nov 22 23:00:06 master1 kube-apiserver[2268]: [1.212821312s] [70.138µs] Self-linking done
+Nov 22 23:00:06 master1 kube-apiserver[2268]: [1.213237794s] [416.482µs] Writing http response done (11 items)
+Nov 22 23:00:06 master1 kube-apiserver[2268]: "List /api/v1/services" [1.213239707s] [1.913µs] END
+Nov 22 23:00:07 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 89.676355ms)[0m
+Nov 22 23:00:07 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:07 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 89.769977ms)[0m
+Nov 22 23:00:07 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:09 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 250.122445ms)[0m
+Nov 22 23:00:09 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:09 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 250.350245ms)[0m
+Nov 22 23:00:09 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:09 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 198.487027ms)[0m
+Nov 22 23:00:09 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:09 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 198.574895ms)[0m
+Nov 22 23:00:09 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:09 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 57.62075ms)[0m
+Nov 22 23:00:09 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:09 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 57.754125ms)[0m
+Nov 22 23:00:09 master1 kube-apiserver[2268]: I1122 23:00:09.866173    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Endpoints" (started 2017-11-22 23:00:08.779550671 +0800 CST):
+Nov 22 23:00:09 master1 kube-apiserver[2268]: [135.58µs] [135.58µs] initial value restored
+Nov 22 23:00:09 master1 kube-apiserver[2268]: [435.986µs] [300.406µs] Transaction prepared
+Nov 22 23:00:09 master1 kube-apiserver[2268]: [1.086469927s] [1.086033941s] Transaction committed
+Nov 22 23:00:09 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Endpoints" [1.086524922s] [54.995µs] END
+Nov 22 23:00:09 master1 kube-apiserver[2268]: I1122 23:00:09.866494    2268 trace.go:61] Trace "Update /api/v1/namespaces/kube-system/endpoints/kube-controller-manager" (started 2017-11-22 23:00:08.779283615 +0800 CST):
+Nov 22 23:00:09 master1 kube-apiserver[2268]: [47.196µs] [47.196µs] About to convert to expected version
+Nov 22 23:00:09 master1 kube-apiserver[2268]: [141.865µs] [94.669µs] Conversion done
+Nov 22 23:00:09 master1 kube-apiserver[2268]: [154.021µs] [12.156µs] About to store object in database
+Nov 22 23:00:09 master1 kube-apiserver[2268]: [1.086928151s] [1.08677413s] Object stored in database
+Nov 22 23:00:09 master1 kube-apiserver[2268]: [1.086939016s] [10.865µs] Self-link added
+Nov 22 23:00:09 master1 kube-apiserver[2268]: "Update /api/v1/namespaces/kube-system/endpoints/kube-controller-manager" [1.0871178s] [178.784µs] END
+Nov 22 23:00:09 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:10 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 88.427047ms)[0m
+Nov 22 23:00:10 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:10 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 88.516416ms)[0m
+Nov 22 23:00:10 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:10 master1 kube-apiserver[2268]: I1122 23:00:10.287675    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Endpoints" (started 2017-11-22 23:00:09.644691171 +0800 CST):
+Nov 22 23:00:10 master1 kube-apiserver[2268]: [67.021µs] [67.021µs] initial value restored
+Nov 22 23:00:10 master1 kube-apiserver[2268]: [254.116µs] [187.095µs] Transaction prepared
+Nov 22 23:00:10 master1 kube-apiserver[2268]: [642.807459ms] [642.553343ms] Transaction committed
+Nov 22 23:00:10 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Endpoints" [642.870648ms] [63.189µs] END
+Nov 22 23:00:10 master1 kube-apiserver[2268]: I1122 23:00:10.288098    2268 trace.go:61] Trace "Update /api/v1/namespaces/kube-system/endpoints/kube-scheduler" (started 2017-11-22 23:00:09.64456472 +0800 CST):
+Nov 22 23:00:10 master1 kube-apiserver[2268]: [26.343µs] [26.343µs] About to convert to expected version
+Nov 22 23:00:10 master1 kube-apiserver[2268]: [57.216µs] [30.873µs] Conversion done
+Nov 22 23:00:10 master1 kube-apiserver[2268]: [63.286µs] [6.07µs] About to store object in database
+Nov 22 23:00:10 master1 kube-apiserver[2268]: [643.190176ms] [643.12689ms] Object stored in database
+Nov 22 23:00:10 master1 kube-apiserver[2268]: [643.222964ms] [32.788µs] Self-link added
+Nov 22 23:00:10 master1 kube-apiserver[2268]: "Update /api/v1/namespaces/kube-system/endpoints/kube-scheduler" [643.410504ms] [187.54µs] END
+Nov 22 23:00:10 master1 kube-apiserver[2268]: I1122 23:00:10.295069    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Node" (started 2017-11-22 23:00:09.261227021 +0800 CST):
+Nov 22 23:00:10 master1 kube-apiserver[2268]: [282.897µs] [282.897µs] initial value restored
+Nov 22 23:00:10 master1 kube-apiserver[2268]: [2.831238ms] [2.548341ms] Transaction prepared
+Nov 22 23:00:10 master1 kube-apiserver[2268]: [1.033551916s] [1.030720678s] Transaction committed
+Nov 22 23:00:10 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Node" [1.033747831s] [195.915µs] END
+Nov 22 23:00:10 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 87.132348ms)[0m
+Nov 22 23:00:10 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:10 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 87.383327ms)[0m
+Nov 22 23:00:10 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:10 master1 kube-apiserver[2268]: I1122 23:00:10.876128    2268 trace.go:61] Trace "List /apis/extensions/v1beta1/thirdpartyresources" (started 2017-11-22 23:00:10.145055072 +0800 CST):
+Nov 22 23:00:10 master1 kube-apiserver[2268]: [12.48µs] [12.48µs] About to List from storage
+Nov 22 23:00:10 master1 kube-apiserver[2268]: [730.744786ms] [730.732306ms] Listing from storage done
+Nov 22 23:00:10 master1 kube-apiserver[2268]: [730.760896ms] [16.11µs] Self-linking done
+Nov 22 23:00:10 master1 kube-apiserver[2268]: [730.973854ms] [212.958µs] Writing http response done (0 items)
+Nov 22 23:00:10 master1 kube-apiserver[2268]: "List /apis/extensions/v1beta1/thirdpartyresources" [730.975619ms] [1.765µs] END
+Nov 22 23:00:12 master1 systemd[1]: Started Docker Cleanup.
+-- Subject: Unit docker-cleanup.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit docker-cleanup.service has finished starting up.
+-- 
+-- The start-up result is done.
+Nov 22 23:00:12 master1 kube-apiserver[2268]: I1122 23:00:12.975992    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Endpoints" (started 2017-11-22 23:00:12.299913465 +0800 CST):
+Nov 22 23:00:12 master1 kube-apiserver[2268]: [93.91µs] [93.91µs] initial value restored
+Nov 22 23:00:12 master1 kube-apiserver[2268]: [380.22µs] [286.31µs] Transaction prepared
+Nov 22 23:00:12 master1 kube-apiserver[2268]: [675.827616ms] [675.447396ms] Transaction committed
+Nov 22 23:00:12 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Endpoints" [675.876656ms] [49.04µs] END
+Nov 22 23:00:12 master1 kube-apiserver[2268]: I1122 23:00:12.976591    2268 trace.go:61] Trace "Update /api/v1/namespaces/kube-system/endpoints/kube-scheduler" (started 2017-11-22 23:00:12.299731808 +0800 CST):
+Nov 22 23:00:12 master1 kube-apiserver[2268]: [38.252µs] [38.252µs] About to convert to expected version
+Nov 22 23:00:12 master1 kube-apiserver[2268]: [84.284µs] [46.032µs] Conversion done
+Nov 22 23:00:13 master1 kube-apiserver[2268]: [93.832µs] [9.548µs] About to store object in database
+Nov 22 23:00:13 master1 kube-apiserver[2268]: [676.332768ms] [676.238936ms] Object stored in database
+Nov 22 23:00:13 master1 kube-apiserver[2268]: [676.341488ms] [8.72µs] Self-link added
+Nov 22 23:00:13 master1 kube-apiserver[2268]: "Update /api/v1/namespaces/kube-system/endpoints/kube-scheduler" [676.656221ms] [314.733µs] END
+Nov 22 23:00:14 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 49.414303ms)[0m
+Nov 22 23:00:14 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:14 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 49.460073ms)[0m
+Nov 22 23:00:14 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:16 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 243.615878ms)[0m
+Nov 22 23:00:16 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:16 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 243.733096ms)[0m
+Nov 22 23:00:16 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:20 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 267.548333ms)[0m
+Nov 22 23:00:20 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:20 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 267.825738ms)[0m
+Nov 22 23:00:20 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:20 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 118.332223ms)[0m
+Nov 22 23:00:20 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:20 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 118.437618ms)[0m
+Nov 22 23:00:20 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:20 master1 kube-apiserver[2268]: I1122 23:00:20.859295    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Node" (started 2017-11-22 23:00:20.313913763 +0800 CST):
+Nov 22 23:00:20 master1 kube-apiserver[2268]: [157.603µs] [157.603µs] initial value restored
+Nov 22 23:00:20 master1 kube-apiserver[2268]: [2.513736ms] [2.356133ms] Transaction prepared
+Nov 22 23:00:20 master1 kube-apiserver[2268]: [545.053383ms] [542.539647ms] Transaction committed
+Nov 22 23:00:20 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Node" [545.270933ms] [217.55µs] END
+Nov 22 23:00:21 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 173.455814ms)[0m
+Nov 22 23:00:21 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:21 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 173.552182ms)[0m
+Nov 22 23:00:21 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:21 master1 kube-apiserver[2268]: I1122 23:00:21.259515    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Endpoints" (started 2017-11-22 23:00:20.720647652 +0800 CST):
+Nov 22 23:00:21 master1 kube-apiserver[2268]: [84.313µs] [84.313µs] initial value restored
+Nov 22 23:00:21 master1 kube-apiserver[2268]: [362.213µs] [277.9µs] Transaction prepared
+Nov 22 23:00:21 master1 kube-apiserver[2268]: [538.72322ms] [538.361007ms] Transaction committed
+Nov 22 23:00:21 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Endpoints" [538.777555ms] [54.335µs] END
+Nov 22 23:00:21 master1 kube-apiserver[2268]: I1122 23:00:21.259800    2268 trace.go:61] Trace "Update /api/v1/namespaces/kube-system/endpoints/kube-controller-manager" (started 2017-11-22 23:00:20.720494032 +0800 CST):
+Nov 22 23:00:21 master1 kube-apiserver[2268]: [33.193µs] [33.193µs] About to convert to expected version
+Nov 22 23:00:21 master1 kube-apiserver[2268]: [70.302µs] [37.109µs] Conversion done
+Nov 22 23:00:21 master1 kube-apiserver[2268]: [78.537µs] [8.235µs] About to store object in database
+Nov 22 23:00:21 master1 kube-apiserver[2268]: [539.05918ms] [538.980643ms] Object stored in database
+Nov 22 23:00:21 master1 kube-apiserver[2268]: [539.06868ms] [9.5µs] Self-link added
+Nov 22 23:00:21 master1 kube-apiserver[2268]: "Update /api/v1/namespaces/kube-system/endpoints/kube-controller-manager" [539.21712ms] [148.44µs] END
+Nov 22 23:00:21 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 13.84838ms)[0m
+Nov 22 23:00:21 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:21 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 13.977607ms)[0m
+Nov 22 23:00:21 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:27 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 166.92263ms)[0m
+Nov 22 23:00:27 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:27 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 167.030352ms)[0m
+Nov 22 23:00:27 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:28 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 32.497677ms)[0m
+Nov 22 23:00:28 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:28 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 32.889628ms)[0m
+Nov 22 23:00:28 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:28 master1 kube-apiserver[2268]: I1122 23:00:28.335001    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Endpoints" (started 2017-11-22 23:00:27.461976893 +0800 CST):
+Nov 22 23:00:28 master1 kube-apiserver[2268]: [94.642µs] [94.642µs] initial value restored
+Nov 22 23:00:28 master1 kube-apiserver[2268]: [382.345µs] [287.703µs] Transaction prepared
+Nov 22 23:00:28 master1 kube-apiserver[2268]: [872.84726ms] [872.464915ms] Transaction committed
+Nov 22 23:00:28 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Endpoints" [872.910938ms] [63.678µs] END
+Nov 22 23:00:28 master1 kube-apiserver[2268]: I1122 23:00:28.335290    2268 trace.go:61] Trace "Update /api/v1/namespaces/kube-system/endpoints/kube-controller-manager" (started 2017-11-22 23:00:27.461790893 +0800 CST):
+Nov 22 23:00:28 master1 kube-apiserver[2268]: [35.675µs] [35.675µs] About to convert to expected version
+Nov 22 23:00:28 master1 kube-apiserver[2268]: [84.673µs] [48.998µs] Conversion done
+Nov 22 23:00:28 master1 kube-apiserver[2268]: [93.84µs] [9.167µs] About to store object in database
+Nov 22 23:00:28 master1 kube-apiserver[2268]: [873.255916ms] [873.162076ms] Object stored in database
+Nov 22 23:00:28 master1 kube-apiserver[2268]: [873.26761ms] [11.694µs] Self-link added
+Nov 22 23:00:28 master1 kube-apiserver[2268]: "Update /api/v1/namespaces/kube-system/endpoints/kube-controller-manager" [873.415082ms] [147.472µs] END
+Nov 22 23:00:46 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 576.768672ms)[0m
+Nov 22 23:00:46 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:46 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 578.386473ms)[0m
+Nov 22 23:00:46 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:46 master1 kube-apiserver[2268]: I1122 23:00:46.941367    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Node" (started 2017-11-22 23:00:45.968202196 +0800 CST):
+Nov 22 23:00:46 master1 kube-apiserver[2268]: [213.975µs] [213.975µs] initial value restored
+Nov 22 23:00:46 master1 kube-apiserver[2268]: [2.015118ms] [1.801143ms] Transaction prepared
+Nov 22 23:00:46 master1 kube-apiserver[2268]: [973.050376ms] [971.035258ms] Transaction committed
+Nov 22 23:00:46 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Node" [973.113205ms] [62.829µs] END
+Nov 22 23:00:51 master1 etcd[2280]: store.index: compact 85320
+Nov 22 23:00:52 master1 etcd[2280]: [1;39mapply entries took too long [265.447881ms for 2 entries][0m
+Nov 22 23:00:52 master1 etcd[2280]: [1;39mavoid queries with large range/delete range![0m
+Nov 22 23:00:52 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 28.945774ms)[0m
+Nov 22 23:00:52 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:52 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 29.038336ms)[0m
+Nov 22 23:00:52 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:52 master1 kube-apiserver[2268]: I1122 23:00:52.309738    2268 compact.go:159] etcd: compacted rev (85320), endpoints ([https://10.10.10.20:2379 https://10.10.10.21:2379 https://10.10.10.22:2379])
+Nov 22 23:00:52 master1 etcd[2280]: finished scheduled compaction at 85320 (took 638.777679ms)
+Nov 22 23:00:52 master1 etcd[2280]: [1;39mapply entries took too long [465.33799ms for 1 entries][0m
+Nov 22 23:00:52 master1 etcd[2280]: [1;39mavoid queries with large range/delete range![0m
+Nov 22 23:00:52 master1 kube-apiserver[2268]: I1122 23:00:52.778040    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Endpoints" (started 2017-11-22 23:00:52.064308676 +0800 CST):
+Nov 22 23:00:52 master1 kube-apiserver[2268]: [144.207µs] [144.207µs] initial value restored
+Nov 22 23:00:52 master1 kube-apiserver[2268]: [419.42µs] [275.213µs] Transaction prepared
+Nov 22 23:00:52 master1 kube-apiserver[2268]: [713.59081ms] [713.17139ms] Transaction committed
+Nov 22 23:00:52 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Endpoints" [713.638177ms] [47.367µs] END
+Nov 22 23:00:52 master1 kube-apiserver[2268]: I1122 23:00:52.778330    2268 trace.go:61] Trace "Update /api/v1/namespaces/kube-system/endpoints/kube-scheduler" (started 2017-11-22 23:00:52.064105603 +0800 CST):
+Nov 22 23:00:52 master1 kube-apiserver[2268]: [44.363µs] [44.363µs] About to convert to expected version
+Nov 22 23:00:52 master1 kube-apiserver[2268]: [95.168µs] [50.805µs] Conversion done
+Nov 22 23:00:52 master1 kube-apiserver[2268]: [104.453µs] [9.285µs] About to store object in database
+Nov 22 23:00:52 master1 kube-apiserver[2268]: [713.970658ms] [713.866205ms] Object stored in database
+Nov 22 23:00:52 master1 kube-apiserver[2268]: [713.979345ms] [8.687µs] Self-link added
+Nov 22 23:00:52 master1 kube-apiserver[2268]: "Update /api/v1/namespaces/kube-system/endpoints/kube-scheduler" [714.135647ms] [156.302µs] END
+Nov 22 23:00:53 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 3.000755ms)[0m
+Nov 22 23:00:53 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:00:53 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 3.094598ms)[0m
+Nov 22 23:00:53 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:01:01 master1 systemd[1]: Started Session 183 of user root.
+-- Subject: Unit session-183.scope has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit session-183.scope has finished starting up.
+-- 
+-- The start-up result is done.
+Nov 22 23:01:01 master1 systemd[1]: Starting Session 183 of user root.
+-- Subject: Unit session-183.scope has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit session-183.scope has begun starting up.
+Nov 22 23:01:01 master1 CROND[15380]: (root) CMD (run-parts /etc/cron.hourly)
+Nov 22 23:01:02 master1 run-parts(/etc/cron.hourly)[15399]: [1;39mstarting 0anacron[0m
+Nov 22 23:01:02 master1 run-parts(/etc/cron.hourly)[15405]: [1;39mfinished 0anacron[0m
+Nov 22 23:01:03 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 115.777369ms)[0m
+Nov 22 23:01:03 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:01:03 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 115.959204ms)[0m
+Nov 22 23:01:03 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:01:04 master1 kube-apiserver[2268]: I1122 23:01:04.254052    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Endpoints" (started 2017-11-22 23:01:03.367545968 +0800 CST):
+Nov 22 23:01:04 master1 kube-apiserver[2268]: [81.968µs] [81.968µs] initial value restored
+Nov 22 23:01:04 master1 kube-apiserver[2268]: [61.949174ms] [61.867206ms] Transaction prepared
+Nov 22 23:01:04 master1 kube-apiserver[2268]: [886.373797ms] [824.424623ms] Transaction committed
+Nov 22 23:01:04 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Endpoints" [886.417999ms] [44.202µs] END
+Nov 22 23:01:04 master1 kube-apiserver[2268]: I1122 23:01:04.254351    2268 trace.go:61] Trace "Update /api/v1/namespaces/kube-system/endpoints/kube-scheduler" (started 2017-11-22 23:01:03.367391629 +0800 CST):
+Nov 22 23:01:04 master1 kube-apiserver[2268]: [32.305µs] [32.305µs] About to convert to expected version
+Nov 22 23:01:04 master1 kube-apiserver[2268]: [71.977µs] [39.672µs] Conversion done
+Nov 22 23:01:04 master1 kube-apiserver[2268]: [79.695µs] [7.718µs] About to store object in database
+Nov 22 23:01:04 master1 kube-apiserver[2268]: [886.707043ms] [886.627348ms] Object stored in database
+Nov 22 23:01:04 master1 kube-apiserver[2268]: [886.713928ms] [6.885µs] Self-link added
+Nov 22 23:01:04 master1 kube-apiserver[2268]: "Update /api/v1/namespaces/kube-system/endpoints/kube-scheduler" [886.862865ms] [148.937µs] END
+Nov 22 23:01:14 master1 kube-apiserver[2268]: I1122 23:01:14.028662    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Endpoints" (started 2017-11-22 23:01:13.256731779 +0800 CST):
+Nov 22 23:01:14 master1 kube-apiserver[2268]: [72.295µs] [72.295µs] initial value restored
+Nov 22 23:01:14 master1 kube-apiserver[2268]: [242.398µs] [170.103µs] Transaction prepared
+Nov 22 23:01:14 master1 kube-apiserver[2268]: [771.787984ms] [771.545586ms] Transaction committed
+Nov 22 23:01:14 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Endpoints" [771.839267ms] [51.283µs] END
+Nov 22 23:01:14 master1 kube-apiserver[2268]: I1122 23:01:14.028950    2268 trace.go:61] Trace "Update /api/v1/namespaces/kube-system/endpoints/kube-controller-manager" (started 2017-11-22 23:01:13.25661571 +0800 CST):
+Nov 22 23:01:14 master1 kube-apiserver[2268]: [25.755µs] [25.755µs] About to convert to expected version
+Nov 22 23:01:14 master1 kube-apiserver[2268]: [54.206µs] [28.451µs] Conversion done
+Nov 22 23:01:14 master1 kube-apiserver[2268]: [59.676µs] [5.47µs] About to store object in database
+Nov 22 23:01:14 master1 kube-apiserver[2268]: [772.08836ms] [772.028684ms] Object stored in database
+Nov 22 23:01:14 master1 kube-apiserver[2268]: [772.097886ms] [9.526µs] Self-link added
+Nov 22 23:01:14 master1 kube-apiserver[2268]: "Update /api/v1/namespaces/kube-system/endpoints/kube-controller-manager" [772.246401ms] [148.515µs] END
+Nov 22 23:01:18 master1 kube-apiserver[2268]: I1122 23:01:18.109636    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Node" (started 2017-11-22 23:01:17.388663517 +0800 CST):
+Nov 22 23:01:18 master1 kube-apiserver[2268]: [187.498µs] [187.498µs] initial value restored
+Nov 22 23:01:18 master1 kube-apiserver[2268]: [1.499169ms] [1.311671ms] Transaction prepared
+Nov 22 23:01:18 master1 kube-apiserver[2268]: [720.73761ms] [719.238441ms] Transaction committed
+Nov 22 23:01:18 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Node" [720.899905ms] [162.295µs] END
+Nov 22 23:01:18 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 13.469831ms)[0m
+Nov 22 23:01:18 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:01:18 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 13.545106ms)[0m
+Nov 22 23:01:18 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:01:24 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 99.412429ms)[0m
+Nov 22 23:01:24 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:01:24 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 99.510156ms)[0m
+Nov 22 23:01:24 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:01:38 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 56.717054ms)[0m
+Nov 22 23:01:38 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:01:38 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 56.898064ms)[0m
+Nov 22 23:01:38 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:01:40 master1 polkitd[811]: [1;39mRegistered Authentication Agent for unix-process:15425:8500384 (system bus name :1.518 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)[0m
+Nov 22 23:01:40 master1 systemd[1]: Reloading.
+Nov 22 23:01:40 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 1.599881ms)[0m
+Nov 22 23:01:40 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:01:40 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 1.717536ms)[0m
+Nov 22 23:01:40 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:01:42 master1 kube-apiserver[2268]: I1122 23:01:42.347189    2268 trace.go:61] Trace "List /apis/extensions/v1beta1/thirdpartyresources" (started 2017-11-22 23:01:41.824835199 +0800 CST):
+Nov 22 23:01:42 master1 kube-apiserver[2268]: [11.536µs] [11.536µs] About to List from storage
+Nov 22 23:01:42 master1 kube-apiserver[2268]: [522.07198ms] [522.060444ms] Listing from storage done
+Nov 22 23:01:42 master1 kube-apiserver[2268]: [522.087642ms] [15.662µs] Self-linking done
+Nov 22 23:01:42 master1 kube-apiserver[2268]: [522.274017ms] [186.375µs] Writing http response done (0 items)
+Nov 22 23:01:42 master1 kube-apiserver[2268]: "List /apis/extensions/v1beta1/thirdpartyresources" [522.277137ms] [3.12µs] END
+Nov 22 23:01:42 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 101.948712ms)[0m
+Nov 22 23:01:42 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:01:42 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 102.130487ms)[0m
+Nov 22 23:01:42 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:01:42 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 93.425752ms)[0m
+Nov 22 23:01:42 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:01:42 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 94.286807ms)[0m
+Nov 22 23:01:42 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:01:43 master1 etcd[2280]: [1;39mapply entries took too long [168.994992ms for 1 entries][0m
+Nov 22 23:01:43 master1 etcd[2280]: [1;39mavoid queries with large range/delete range![0m
+Nov 22 23:01:43 master1 kube-apiserver[2268]: I1122 23:01:43.318961    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Node" (started 2017-11-22 23:01:42.761599395 +0800 CST):
+Nov 22 23:01:43 master1 kube-apiserver[2268]: [154.642µs] [154.642µs] initial value restored
+Nov 22 23:01:43 master1 kube-apiserver[2268]: [1.981758ms] [1.827116ms] Transaction prepared
+Nov 22 23:01:43 master1 kube-apiserver[2268]: [557.133051ms] [555.151293ms] Transaction committed
+Nov 22 23:01:43 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Node" [557.270613ms] [137.562µs] END
+Nov 22 23:01:43 master1 systemd[1]: [1;39m[/usr/lib/systemd/system/docker.service:30] Unknown lvalue 'EnvironmentFile' in section 'Install'[0m
+Nov 22 23:01:43 master1 systemd[1]: [1;39m[/usr/lib/systemd/system/docker.service:31] Unknown lvalue 'EnvironmentFile' in section 'Install'[0m
+Nov 22 23:01:43 master1 systemd[1]: [1;39m[/usr/lib/systemd/system/docker.service:32] Unknown lvalue 'EnvironmentFile' in section 'Install'[0m
+Nov 22 23:01:44 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 29.2129ms)[0m
+Nov 22 23:01:44 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:01:44 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 29.294037ms)[0m
+Nov 22 23:01:44 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:01:46 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 305.940331ms)[0m
+Nov 22 23:01:46 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:01:46 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 306.08348ms)[0m
+Nov 22 23:01:46 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:01:46 master1 kube-apiserver[2268]: I1122 23:01:46.758709    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Endpoints" (started 2017-11-22 23:01:46.180594956 +0800 CST):
+Nov 22 23:01:46 master1 kube-apiserver[2268]: [86.493µs] [86.493µs] initial value restored
+Nov 22 23:01:46 master1 kube-apiserver[2268]: [319.01µs] [232.517µs] Transaction prepared
+Nov 22 23:01:46 master1 kube-apiserver[2268]: [577.975674ms] [577.656664ms] Transaction committed
+Nov 22 23:01:46 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Endpoints" [578.025729ms] [50.055µs] END
+Nov 22 23:01:46 master1 kube-apiserver[2268]: I1122 23:01:46.758994    2268 trace.go:61] Trace "Update /api/v1/namespaces/kube-system/endpoints/kube-controller-manager" (started 2017-11-22 23:01:46.180408206 +0800 CST):
+Nov 22 23:01:46 master1 kube-apiserver[2268]: [37.101µs] [37.101µs] About to convert to expected version
+Nov 22 23:01:46 master1 kube-apiserver[2268]: [88.69µs] [51.589µs] Conversion done
+Nov 22 23:01:47 master1 kube-apiserver[2268]: [97.503µs] [8.813µs] About to store object in database
+Nov 22 23:01:47 master1 kube-apiserver[2268]: [578.340077ms] [578.242574ms] Object stored in database
+Nov 22 23:01:47 master1 kube-apiserver[2268]: [578.348247ms] [8.17µs] Self-link added
+Nov 22 23:01:47 master1 kube-apiserver[2268]: "Update /api/v1/namespaces/kube-system/endpoints/kube-controller-manager" [578.496732ms] [148.485µs] END
+Nov 22 23:01:47 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 488.232645ms)[0m
+Nov 22 23:01:47 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:01:47 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 488.465655ms)[0m
+Nov 22 23:01:47 master1 kube-apiserver[2268]: I1122 23:01:47.572754    2268 trace.go:61] Trace "Get /api/v1/namespaces/kube-system/endpoints/kube-scheduler" (started 2017-11-22 23:01:46.9170361 +0800 CST):
+Nov 22 23:01:47 master1 kube-apiserver[2268]: "Get /api/v1/namespaces/kube-system/endpoints/kube-scheduler" [655.638431ms] [655.638431ms] END
+Nov 22 23:01:47 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:01:48 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 40.624358ms)[0m
+Nov 22 23:01:48 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:01:48 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 40.74102ms)[0m
+Nov 22 23:01:48 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:01:49 master1 polkitd[811]: [1;39mUnregistered Authentication Agent for unix-process:15425:8500384 (system bus name :1.518, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)[0m
+Nov 22 23:01:51 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 158.400626ms)[0m
+Nov 22 23:01:51 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:01:51 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 158.527339ms)[0m
+Nov 22 23:01:51 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:01:56 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 33.069678ms)[0m
+Nov 22 23:01:56 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:01:56 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 34.114211ms)[0m
+Nov 22 23:01:56 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:01:57 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 6.636591ms)[0m
+Nov 22 23:01:57 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:01:57 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 6.75537ms)[0m
+Nov 22 23:01:57 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:02:03 master1 polkitd[811]: [1;39mRegistered Authentication Agent for unix-process:15463:8502816 (system bus name :1.519 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)[0m
+Nov 22 23:02:03 master1 systemd[1]: Stopping Docker Application Container Engine...
+-- Subject: Unit docker.service has begun shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit docker.service has begun shutting down.
+Nov 22 23:02:04 master1 etcd[2280]: [1;39mapply entries took too long [147.502372ms for 1 entries][0m
+Nov 22 23:02:04 master1 etcd[2280]: [1;39mavoid queries with large range/delete range![0m
+Nov 22 23:02:04 master1 dockerd-current[2695]: time="2017-11-22T23:02:04.035484468+08:00" level=info msg="Processing signal 'terminated'"
+Nov 22 23:02:05 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 48.677787ms)[0m
+Nov 22 23:02:05 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:02:05 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 48.774732ms)[0m
+Nov 22 23:02:05 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:02:06 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 44.84988ms)[0m
+Nov 22 23:02:06 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:02:06 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 44.959852ms)[0m
+Nov 22 23:02:06 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:02:08 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 356.62546ms)[0m
+Nov 22 23:02:08 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:02:08 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 356.736534ms)[0m
+Nov 22 23:02:08 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:02:09 master1 kube-apiserver[2268]: I1122 23:02:09.116694    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Endpoints" (started 2017-11-22 23:02:08.33859177 +0800 CST):
+Nov 22 23:02:09 master1 kube-apiserver[2268]: [99.845µs] [99.845µs] initial value restored
+Nov 22 23:02:09 master1 kube-apiserver[2268]: [340.137µs] [240.292µs] Transaction prepared
+Nov 22 23:02:09 master1 kube-apiserver[2268]: [777.948927ms] [777.60879ms] Transaction committed
+Nov 22 23:02:09 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Endpoints" [778.004139ms] [55.212µs] END
+Nov 22 23:02:09 master1 kube-apiserver[2268]: I1122 23:02:09.117038    2268 trace.go:61] Trace "Update /api/v1/namespaces/kube-system/endpoints/kube-controller-manager" (started 2017-11-22 23:02:08.33839564 +0800 CST):
+Nov 22 23:02:09 master1 kube-apiserver[2268]: [44.933µs] [44.933µs] About to convert to expected version
+Nov 22 23:02:09 master1 kube-apiserver[2268]: [95.483µs] [50.55µs] Conversion done
+Nov 22 23:02:09 master1 kube-apiserver[2268]: [105.076µs] [9.593µs] About to store object in database
+Nov 22 23:02:09 master1 kube-apiserver[2268]: [778.346063ms] [778.240987ms] Object stored in database
+Nov 22 23:02:09 master1 kube-apiserver[2268]: [778.355111ms] [9.048µs] Self-link added
+Nov 22 23:02:09 master1 kube-apiserver[2268]: "Update /api/v1/namespaces/kube-system/endpoints/kube-controller-manager" [778.538658ms] [183.547µs] END
+Nov 22 23:02:09 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 24.493ms)[0m
+Nov 22 23:02:09 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:02:09 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 24.597664ms)[0m
+Nov 22 23:02:09 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:02:10 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 115.790126ms)[0m
+Nov 22 23:02:10 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:02:10 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 115.874724ms)[0m
+Nov 22 23:02:10 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:02:10 master1 kube-apiserver[2268]: I1122 23:02:10.202083    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Node" (started 2017-11-22 23:02:09.108173648 +0800 CST):
+Nov 22 23:02:10 master1 kube-apiserver[2268]: [160.921µs] [160.921µs] initial value restored
+Nov 22 23:02:10 master1 kube-apiserver[2268]: [45.027912ms] [44.866991ms] Transaction prepared
+Nov 22 23:02:10 master1 kube-apiserver[2268]: [1.0935609s] [1.048532988s] Transaction committed
+Nov 22 23:02:10 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Node" [1.093790717s] [229.817µs] END
+Nov 22 23:02:10 master1 kube-apiserver[2268]: I1122 23:02:10.206654    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Endpoints" (started 2017-11-22 23:02:09.391558742 +0800 CST):
+Nov 22 23:02:10 master1 kube-apiserver[2268]: [110.933µs] [110.933µs] initial value restored
+Nov 22 23:02:10 master1 kube-apiserver[2268]: [438.485µs] [327.552µs] Transaction prepared
+Nov 22 23:02:10 master1 kube-apiserver[2268]: [814.907847ms] [814.469362ms] Transaction committed
+Nov 22 23:02:10 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Endpoints" [814.976392ms] [68.545µs] END
+Nov 22 23:02:10 master1 kube-apiserver[2268]: I1122 23:02:10.207062    2268 trace.go:61] Trace "Update /api/v1/namespaces/kube-system/endpoints/kube-scheduler" (started 2017-11-22 23:02:09.391302346 +0800 CST):
+Nov 22 23:02:10 master1 kube-apiserver[2268]: [75.938µs] [75.938µs] About to convert to expected version
+Nov 22 23:02:10 master1 kube-apiserver[2268]: [136.791µs] [60.853µs] Conversion done
+Nov 22 23:02:10 master1 kube-apiserver[2268]: [148.986µs] [12.195µs] About to store object in database
+Nov 22 23:02:10 master1 kube-apiserver[2268]: [815.408813ms] [815.259827ms] Object stored in database
+Nov 22 23:02:10 master1 kube-apiserver[2268]: [815.418678ms] [9.865µs] Self-link added
+Nov 22 23:02:10 master1 kube-apiserver[2268]: "Update /api/v1/namespaces/kube-system/endpoints/kube-scheduler" [815.63931ms] [220.632µs] END
+Nov 22 23:02:12 master1 dockerd-current[2695]: time="2017-11-22T23:02:11.814462939+08:00" level=info msg="stopping containerd after receiving terminated"
+Nov 22 23:02:12 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 25.127441ms)[0m
+Nov 22 23:02:12 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:02:12 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 25.265259ms)[0m
+Nov 22 23:02:12 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:02:12 master1 systemd[1]: Starting Docker Storage Setup...
+-- Subject: Unit docker-storage-setup.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit docker-storage-setup.service has begun starting up.
+Nov 22 23:02:14 master1 container-storage-setup[15482]: ERROR: Docker has been previously configured for use with devicemapper graph driver. Not creating a new thin pool as existing docker metadata will fail to work with it. Manual cleanup is required before this will succeed.
+Nov 22 23:02:14 master1 systemd[1]: [1;39mdocker-storage-setup.service: main process exited, code=exited, status=1/FAILURE[0m
+Nov 22 23:02:14 master1 container-storage-setup[15482]: INFO: Docker state can be reset by stopping docker and by removing /var/lib/docker directory. This will destroy existing docker images and containers and all the docker metadata.
+Nov 22 23:02:14 master1 systemd[1]: [1;31mFailed to start Docker Storage Setup.[0m
+-- Subject: Unit docker-storage-setup.service has failed
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit docker-storage-setup.service has failed.
+-- 
+-- The result is failed.
+Nov 22 23:02:14 master1 systemd[1]: [1;39mUnit docker-storage-setup.service entered failed state.[0m
+Nov 22 23:02:14 master1 systemd[1]: [1;39mdocker-storage-setup.service failed.[0m
+Nov 22 23:02:14 master1 systemd[1]: Starting Docker Application Container Engine...
+-- Subject: Unit docker.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit docker.service has begun starting up.
+Nov 22 23:02:14 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 30.45671ms)[0m
+Nov 22 23:02:14 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:02:14 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 30.543023ms)[0m
+Nov 22 23:02:14 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:02:15 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 14.974596ms)[0m
+Nov 22 23:02:15 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:02:15 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 15.045043ms)[0m
+Nov 22 23:02:15 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:02:16 master1 dockerd-current[15522]: time="2017-11-22T23:02:16+08:00" level=fatal msg="unable to configure the Docker daemon with file /etc/docker/daemon.json: invalid character '\"' after object key:value pair\n"
+Nov 22 23:02:16 master1 systemd[1]: [1;39mdocker.service: main process exited, code=exited, status=1/FAILURE[0m
+Nov 22 23:02:16 master1 systemd[1]: [1;31mFailed to start Docker Application Container Engine.[0m
+-- Subject: Unit docker.service has failed
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit docker.service has failed.
+-- 
+-- The result is failed.
+Nov 22 23:02:16 master1 systemd[1]: [1;39mUnit docker.service entered failed state.[0m
+Nov 22 23:02:16 master1 systemd[1]: [1;39mdocker.service failed.[0m
+Nov 22 23:02:16 master1 polkitd[811]: [1;39mUnregistered Authentication Agent for unix-process:15463:8502816 (system bus name :1.519, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)[0m
+Nov 22 23:02:20 master1 kube-apiserver[2268]: E1122 23:02:20.463319    2268 watcher.go:188] watch chan error: etcdserver: mvcc: required revision has been compacted
+Nov 22 23:02:21 master1 kube-controller-manager[12858]: W1122 23:02:21.663110   12858 reflector.go:323] k8s.io/kubernetes/pkg/controller/garbagecollector/graph_builder.go:192: watch of <nil> ended with: etcdserver: mvcc: required revision has been compacted
+Nov 22 23:02:25 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 259.876563ms)[0m
+Nov 22 23:02:25 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:02:25 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 259.979421ms)[0m
+Nov 22 23:02:25 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:02:30 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 5.636903ms)[0m
+Nov 22 23:02:30 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:02:30 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 5.749405ms)[0m
+Nov 22 23:02:30 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:02:32 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 120.506285ms)[0m
+Nov 22 23:02:32 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:02:32 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 120.605737ms)[0m
+Nov 22 23:02:32 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:02:33 master1 kube-apiserver[2268]: I1122 23:02:33.028706    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Endpoints" (started 2017-11-22 23:02:32.385802563 +0800 CST):
+Nov 22 23:02:33 master1 kube-apiserver[2268]: [99.097µs] [99.097µs] initial value restored
+Nov 22 23:02:33 master1 kube-apiserver[2268]: [393.584µs] [294.487µs] Transaction prepared
+Nov 22 23:02:33 master1 kube-apiserver[2268]: [642.753477ms] [642.359893ms] Transaction committed
+Nov 22 23:02:33 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Endpoints" [642.808867ms] [55.39µs] END
+Nov 22 23:02:33 master1 kube-apiserver[2268]: I1122 23:02:33.029012    2268 trace.go:61] Trace "Update /api/v1/namespaces/kube-system/endpoints/kube-controller-manager" (started 2017-11-22 23:02:32.385554445 +0800 CST):
+Nov 22 23:02:33 master1 kube-apiserver[2268]: [48.288µs] [48.288µs] About to convert to expected version
+Nov 22 23:02:33 master1 kube-apiserver[2268]: [112.465µs] [64.177µs] Conversion done
+Nov 22 23:02:33 master1 kube-apiserver[2268]: [123.723µs] [11.258µs] About to store object in database
+Nov 22 23:02:33 master1 kube-apiserver[2268]: [643.194795ms] [643.071072ms] Object stored in database
+Nov 22 23:02:33 master1 kube-apiserver[2268]: [643.206833ms] [12.038µs] Self-link added
+Nov 22 23:02:33 master1 kube-apiserver[2268]: "Update /api/v1/namespaces/kube-system/endpoints/kube-controller-manager" [643.370758ms] [163.925µs] END
+Nov 22 23:02:44 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 170.060575ms)[0m
+Nov 22 23:02:44 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:02:44 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 170.148715ms)[0m
+Nov 22 23:02:44 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:02:47 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 85.231335ms)[0m
+Nov 22 23:02:47 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:02:47 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 85.336868ms)[0m
+Nov 22 23:02:47 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:02:59 master1 polkitd[811]: [1;39mRegistered Authentication Agent for unix-process:15561:8508397 (system bus name :1.520 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)[0m
+Nov 22 23:02:59 master1 systemd[1]: Stopping Flanneld overlay address etcd agent...
+-- Subject: Unit flanneld.service has begun shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit flanneld.service has begun shutting down.
+Nov 22 23:03:00 master1 flanneld-start[2411]: I1122 23:03:00.202460    2411 main.go:172] Exiting...
+Nov 22 23:03:00 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 66.815492ms)[0m
+Nov 22 23:03:00 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:03:00 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 66.979412ms)[0m
+Nov 22 23:03:00 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:03:01 master1 systemd[1]: Stopped Flanneld overlay address etcd agent.
+-- Subject: Unit flanneld.service has finished shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit flanneld.service has finished shutting down.
+Nov 22 23:03:01 master1 polkitd[811]: [1;39mUnregistered Authentication Agent for unix-process:15561:8508397 (system bus name :1.520, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)[0m
+Nov 22 23:03:06 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 181.482283ms)[0m
+Nov 22 23:03:06 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:03:06 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 181.585692ms)[0m
+Nov 22 23:03:06 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:03:07 master1 polkitd[811]: [1;39mRegistered Authentication Agent for unix-process:15577:8509198 (system bus name :1.521 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)[0m
+Nov 22 23:03:07 master1 systemd[1]: Starting Flanneld overlay address etcd agent...
+-- Subject: Unit flanneld.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit flanneld.service has begun starting up.
+Nov 22 23:03:08 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 10.008452ms)[0m
+Nov 22 23:03:08 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:03:08 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 10.115953ms)[0m
+Nov 22 23:03:08 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:03:09 master1 flanneld[15585]: warning: ignoring ServerName for user-provided CA for backwards compatibility is deprecated
+Nov 22 23:03:09 master1 flanneld-start[15585]: I1122 23:03:09.171657   15585 main.go:132] Installing signal handlers
+Nov 22 23:03:09 master1 flanneld-start[15585]: I1122 23:03:09.172011   15585 manager.go:136] Determining IP address of default interface
+Nov 22 23:03:09 master1 flanneld-start[15585]: I1122 23:03:09.273987   15585 manager.go:149] Using interface with name br0 and address 10.10.10.20
+Nov 22 23:03:09 master1 flanneld-start[15585]: I1122 23:03:09.274030   15585 manager.go:166] Defaulting external address to interface address (10.10.10.20)
+Nov 22 23:03:10 master1 flanneld-start[15585]: I1122 23:03:10.092310   15585 local_manager.go:134] Found lease (172.30.51.0/24) for current IP (10.10.10.20), reusing
+Nov 22 23:03:10 master1 flanneld-start[15585]: I1122 23:03:10.236005   15585 manager.go:250] Lease acquired: 172.30.51.0/24
+Nov 22 23:03:10 master1 flanneld-start[15585]: I1122 23:03:10.236326   15585 network.go:58] Watching for L3 misses
+Nov 22 23:03:10 master1 flanneld-start[15585]: I1122 23:03:10.236394   15585 network.go:66] Watching for new subnet leases
+Nov 22 23:03:10 master1 systemd[1]: Started Flanneld overlay address etcd agent.
+-- Subject: Unit flanneld.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit flanneld.service has finished starting up.
+-- 
+-- The start-up result is done.
+Nov 22 23:03:10 master1 polkitd[811]: [1;39mUnregistered Authentication Agent for unix-process:15577:8509198 (system bus name :1.521, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)[0m
+Nov 22 23:03:10 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 165.49012ms)[0m
+Nov 22 23:03:10 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:03:10 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 165.556739ms)[0m
+Nov 22 23:03:10 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:03:11 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 35.695612ms)[0m
+Nov 22 23:03:11 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:03:11 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 35.803164ms)[0m
+Nov 22 23:03:11 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:03:13 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 235.365028ms)[0m
+Nov 22 23:03:13 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:03:13 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 235.574968ms)[0m
+Nov 22 23:03:13 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:03:13 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 43.885091ms)[0m
+Nov 22 23:03:13 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:03:13 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 43.942988ms)[0m
+Nov 22 23:03:13 master1 kube-apiserver[2268]: I1122 23:03:13.758509    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Endpoints" (started 2017-11-22 23:03:13.112744242 +0800 CST):
+Nov 22 23:03:13 master1 kube-apiserver[2268]: [126.98µs] [126.98µs] initial value restored
+Nov 22 23:03:13 master1 kube-apiserver[2268]: [522.801µs] [395.821µs] Transaction prepared
+Nov 22 23:03:13 master1 kube-apiserver[2268]: [645.703972ms] [645.181171ms] Transaction committed
+Nov 22 23:03:13 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Endpoints" [645.724462ms] [20.49µs] END
+Nov 22 23:03:13 master1 kube-apiserver[2268]: I1122 23:03:13.758636    2268 trace.go:61] Trace "Update /api/v1/namespaces/kube-system/endpoints/kube-scheduler" (started 2017-11-22 23:03:13.11248808 +0800 CST):
+Nov 22 23:03:13 master1 kube-apiserver[2268]: [56.693µs] [56.693µs] About to convert to expected version
+Nov 22 23:03:13 master1 kube-apiserver[2268]: [118.42µs] [61.727µs] Conversion done
+Nov 22 23:03:13 master1 kube-apiserver[2268]: [128.745µs] [10.325µs] About to store object in database
+Nov 22 23:03:13 master1 kube-apiserver[2268]: [646.038542ms] [645.909797ms] Object stored in database
+Nov 22 23:03:13 master1 kube-apiserver[2268]: [646.041741ms] [3.199µs] Self-link added
+Nov 22 23:03:13 master1 kube-apiserver[2268]: "Update /api/v1/namespaces/kube-system/endpoints/kube-scheduler" [646.119ms] [77.259µs] END
+Nov 22 23:03:13 master1 kube-apiserver[2268]: I1122 23:03:13.759118    2268 trace.go:61] Trace "List /api/v1/nodes" (started 2017-11-22 23:03:13.037412886 +0800 CST):
+Nov 22 23:03:13 master1 kube-apiserver[2268]: [10.64µs] [10.64µs] About to List from storage
+Nov 22 23:03:13 master1 kube-apiserver[2268]: [721.361172ms] [721.350532ms] Listing from storage done
+Nov 22 23:03:13 master1 kube-apiserver[2268]: [721.370657ms] [9.485µs] Self-linking done
+Nov 22 23:03:13 master1 kube-apiserver[2268]: [721.67218ms] [301.523µs] Writing http response done (2 items)
+Nov 22 23:03:13 master1 kube-apiserver[2268]: "List /api/v1/nodes" [721.672862ms] [682ns] END
+Nov 22 23:03:13 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:03:14 master1 kube-apiserver[2268]: I1122 23:03:14.045331    2268 trace.go:61] Trace "List /apis/extensions/v1beta1/thirdpartyresources" (started 2017-11-22 23:03:13.050160288 +0800 CST):
+Nov 22 23:03:14 master1 kube-apiserver[2268]: [8.68µs] [8.68µs] About to List from storage
+Nov 22 23:03:14 master1 kube-apiserver[2268]: [995.002611ms] [994.993931ms] Listing from storage done
+Nov 22 23:03:14 master1 kube-apiserver[2268]: [995.012726ms] [10.115µs] Self-linking done
+Nov 22 23:03:14 master1 kube-apiserver[2268]: [995.134012ms] [121.286µs] Writing http response done (0 items)
+Nov 22 23:03:14 master1 kube-apiserver[2268]: "List /apis/extensions/v1beta1/thirdpartyresources" [995.134788ms] [776ns] END
+Nov 22 23:03:14 master1 kube-apiserver[2268]: I1122 23:03:14.045502    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Endpoints" (started 2017-11-22 23:03:13.467133097 +0800 CST):
+Nov 22 23:03:14 master1 kube-apiserver[2268]: [113.219µs] [113.219µs] initial value restored
+Nov 22 23:03:14 master1 kube-apiserver[2268]: [501.924µs] [388.705µs] Transaction prepared
+Nov 22 23:03:14 master1 kube-apiserver[2268]: [578.324211ms] [577.822287ms] Transaction committed
+Nov 22 23:03:14 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Endpoints" [578.341108ms] [16.897µs] END
+Nov 22 23:03:14 master1 kube-apiserver[2268]: I1122 23:03:14.045601    2268 trace.go:61] Trace "Update /api/v1/namespaces/kube-system/endpoints/kube-controller-manager" (started 2017-11-22 23:03:13.46693679 +0800 CST):
+Nov 22 23:03:14 master1 kube-apiserver[2268]: [37.155µs] [37.155µs] About to convert to expected version
+Nov 22 23:03:14 master1 kube-apiserver[2268]: [87.929µs] [50.774µs] Conversion done
+Nov 22 23:03:14 master1 kube-apiserver[2268]: [98.08µs] [10.151µs] About to store object in database
+Nov 22 23:03:14 master1 kube-apiserver[2268]: [578.579762ms] [578.481682ms] Object stored in database
+Nov 22 23:03:14 master1 kube-apiserver[2268]: [578.583176ms] [3.414µs] Self-link added
+Nov 22 23:03:14 master1 kube-apiserver[2268]: "Update /api/v1/namespaces/kube-system/endpoints/kube-controller-manager" [578.638006ms] [54.83µs] END
+Nov 22 23:03:18 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 49.588524ms)[0m
+Nov 22 23:03:18 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:03:18 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 49.692254ms)[0m
+Nov 22 23:03:18 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:03:24 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 16.47949ms)[0m
+Nov 22 23:03:24 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:03:24 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 16.590797ms)[0m
+Nov 22 23:03:24 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:03:30 master1 polkitd[811]: [1;39mRegistered Authentication Agent for unix-process:15620:8511458 (system bus name :1.522 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)[0m
+Nov 22 23:03:30 master1 systemd[1]: Starting Docker Storage Setup...
+-- Subject: Unit docker-storage-setup.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit docker-storage-setup.service has begun starting up.
+Nov 22 23:03:31 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 411.936654ms)[0m
+Nov 22 23:03:31 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:03:31 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 412.105405ms)[0m
+Nov 22 23:03:31 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:03:31 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 99.824153ms)[0m
+Nov 22 23:03:31 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:03:31 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 100.111263ms)[0m
+Nov 22 23:03:31 master1 kube-apiserver[2268]: I1122 23:03:31.599978    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Endpoints" (started 2017-11-22 23:03:30.726279004 +0800 CST):
+Nov 22 23:03:31 master1 kube-apiserver[2268]: [129.581µs] [129.581µs] initial value restored
+Nov 22 23:03:31 master1 kube-apiserver[2268]: [390.382µs] [260.801µs] Transaction prepared
+Nov 22 23:03:31 master1 kube-apiserver[2268]: [873.545255ms] [873.154873ms] Transaction committed
+Nov 22 23:03:31 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Endpoints" [873.5996ms] [54.345µs] END
+Nov 22 23:03:31 master1 kube-apiserver[2268]: I1122 23:03:31.600296    2268 trace.go:61] Trace "Update /api/v1/namespaces/kube-system/endpoints/kube-scheduler" (started 2017-11-22 23:03:30.536722647 +0800 CST):
+Nov 22 23:03:31 master1 kube-apiserver[2268]: [33.343µs] [33.343µs] About to convert to expected version
+Nov 22 23:03:31 master1 kube-apiserver[2268]: [74.523µs] [41.18µs] Conversion done
+Nov 22 23:03:31 master1 kube-apiserver[2268]: [82.606µs] [8.083µs] About to store object in database
+Nov 22 23:03:31 master1 kube-apiserver[2268]: [1.063295548s] [1.063212942s] Object stored in database
+Nov 22 23:03:31 master1 kube-apiserver[2268]: [1.063304495s] [8.947µs] Self-link added
+Nov 22 23:03:31 master1 kube-apiserver[2268]: "Update /api/v1/namespaces/kube-system/endpoints/kube-scheduler" [1.063477518s] [173.023µs] END
+Nov 22 23:03:31 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:03:31 master1 container-storage-setup[15626]: ERROR: Docker has been previously configured for use with devicemapper graph driver. Not creating a new thin pool as existing docker metadata will fail to work with it. Manual cleanup is required before this will succeed.
+Nov 22 23:03:31 master1 container-storage-setup[15626]: INFO: Docker state can be reset by stopping docker and by removing /var/lib/docker directory. This will destroy existing docker images and containers and all the docker metadata.
+Nov 22 23:03:31 master1 systemd[1]: [1;39mdocker-storage-setup.service: main process exited, code=exited, status=1/FAILURE[0m
+Nov 22 23:03:31 master1 systemd[1]: [1;31mFailed to start Docker Storage Setup.[0m
+-- Subject: Unit docker-storage-setup.service has failed
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit docker-storage-setup.service has failed.
+-- 
+-- The result is failed.
+Nov 22 23:03:31 master1 systemd[1]: [1;39mUnit docker-storage-setup.service entered failed state.[0m
+Nov 22 23:03:31 master1 systemd[1]: [1;39mdocker-storage-setup.service failed.[0m
+Nov 22 23:03:31 master1 kube-apiserver[2268]: I1122 23:03:31.808096    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Endpoints" (started 2017-11-22 23:03:31.068269193 +0800 CST):
+Nov 22 23:03:31 master1 kube-apiserver[2268]: [107.689µs] [107.689µs] initial value restored
+Nov 22 23:03:31 master1 kube-apiserver[2268]: [361.277µs] [253.588µs] Transaction prepared
+Nov 22 23:03:31 master1 kube-apiserver[2268]: [739.706591ms] [739.345314ms] Transaction committed
+Nov 22 23:03:31 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Endpoints" [739.757148ms] [50.557µs] END
+Nov 22 23:03:31 master1 kube-apiserver[2268]: I1122 23:03:31.808333    2268 trace.go:61] Trace "Update /api/v1/namespaces/kube-system/endpoints/kube-controller-manager" (started 2017-11-22 23:03:31.068110193 +0800 CST):
+Nov 22 23:03:31 master1 kube-apiserver[2268]: [33.594µs] [33.594µs] About to convert to expected version
+Nov 22 23:03:31 master1 kube-apiserver[2268]: [73.245µs] [39.651µs] Conversion done
+Nov 22 23:03:31 master1 kube-apiserver[2268]: [81.68µs] [8.435µs] About to store object in database
+Nov 22 23:03:31 master1 kube-apiserver[2268]: [740.017747ms] [739.936067ms] Object stored in database
+Nov 22 23:03:31 master1 kube-apiserver[2268]: [740.026853ms] [9.106µs] Self-link added
+Nov 22 23:03:31 master1 kube-apiserver[2268]: "Update /api/v1/namespaces/kube-system/endpoints/kube-controller-manager" [740.154185ms] [127.332µs] END
+Nov 22 23:03:31 master1 systemd[1]: Starting Docker Application Container Engine...
+-- Subject: Unit docker.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit docker.service has begun starting up.
+Nov 22 23:03:32 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 129.66962ms)[0m
+Nov 22 23:03:32 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:03:32 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 129.801875ms)[0m
+Nov 22 23:03:32 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:03:33 master1 etcd[2280]: [1;39mapply entries took too long [210.25067ms for 1 entries][0m
+Nov 22 23:03:33 master1 etcd[2280]: [1;39mavoid queries with large range/delete range![0m
+Nov 22 23:03:33 master1 kube-apiserver[2268]: I1122 23:03:33.264050    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Node" (started 2017-11-22 23:03:32.128467381 +0800 CST):
+Nov 22 23:03:33 master1 kube-apiserver[2268]: [158.968µs] [158.968µs] initial value restored
+Nov 22 23:03:33 master1 kube-apiserver[2268]: [143.260246ms] [143.101278ms] Transaction prepared
+Nov 22 23:03:33 master1 kube-apiserver[2268]: [1.133278347s] [990.018101ms] Transaction committed
+Nov 22 23:03:33 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Node" [1.133494172s] [215.825µs] END
+Nov 22 23:03:34 master1 etcd[2280]: [1;39mapply entries took too long [113.974512ms for 1 entries][0m
+Nov 22 23:03:34 master1 etcd[2280]: [1;39mavoid queries with large range/delete range![0m
+Nov 22 23:03:34 master1 kube-apiserver[2268]: I1122 23:03:34.681530    2268 trace.go:61] Trace "List /apis/extensions/v1beta1/thirdpartyresources" (started 2017-11-22 23:03:34.051923614 +0800 CST):
+Nov 22 23:03:34 master1 kube-apiserver[2268]: [11.182µs] [11.182µs] About to List from storage
+Nov 22 23:03:34 master1 kube-apiserver[2268]: [629.238979ms] [629.227797ms] Listing from storage done
+Nov 22 23:03:34 master1 kube-apiserver[2268]: [629.256261ms] [17.282µs] Self-linking done
+Nov 22 23:03:34 master1 kube-apiserver[2268]: [629.490939ms] [234.678µs] Writing http response done (0 items)
+Nov 22 23:03:34 master1 kube-apiserver[2268]: "List /apis/extensions/v1beta1/thirdpartyresources" [629.492347ms] [1.408µs] END
+Nov 22 23:03:34 master1 polkitd[811]: [1;39mUnregistered Authentication Agent for unix-process:15620:8511458 (system bus name :1.522, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)[0m
+Nov 22 23:03:34 master1 systemd[1]: [1;39mdocker.service: main process exited, code=exited, status=1/FAILURE[0m
+Nov 22 23:03:34 master1 dockerd-current[15670]: time="2017-11-22T23:03:34+08:00" level=fatal msg="unable to configure the Docker daemon with file /etc/docker/daemon.json: invalid character '\"' after object key:value pair\n"
+Nov 22 23:03:34 master1 systemd[1]: [1;31mFailed to start Docker Application Container Engine.[0m
+-- Subject: Unit docker.service has failed
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit docker.service has failed.
+-- 
+-- The result is failed.
+Nov 22 23:03:34 master1 systemd[1]: [1;39mUnit docker.service entered failed state.[0m
+Nov 22 23:03:34 master1 systemd[1]: [1;39mdocker.service failed.[0m
+Nov 22 23:03:38 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 23.870803ms)[0m
+Nov 22 23:03:38 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:03:38 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 23.968901ms)[0m
+Nov 22 23:03:38 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:03:38 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 82.541µs)[0m
+Nov 22 23:03:38 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:03:38 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 234.306µs)[0m
+Nov 22 23:03:38 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:03:38 master1 etcd[2280]: [1;39mapply entries took too long [118.89386ms for 1 entries][0m
+Nov 22 23:03:38 master1 etcd[2280]: [1;39mavoid queries with large range/delete range![0m
+Nov 22 23:03:47 master1 accounts-daemon[790]: [1;39mg_dbus_interface_skeleton_unexport: assertion 'interface_->priv->connections != NULL' failed[0m
+Nov 22 23:03:53 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 42.204067ms)[0m
+Nov 22 23:03:53 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:03:53 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 42.307172ms)[0m
+Nov 22 23:03:53 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:03:55 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 54.47355ms)[0m
+Nov 22 23:03:55 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:03:55 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 54.563093ms)[0m
+Nov 22 23:03:55 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:03:56 master1 kube-apiserver[2268]: I1122 23:03:56.428585    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Endpoints" (started 2017-11-22 23:03:55.924606864 +0800 CST):
+Nov 22 23:03:56 master1 kube-apiserver[2268]: [132.772µs] [132.772µs] initial value restored
+Nov 22 23:03:56 master1 kube-apiserver[2268]: [493.285µs] [360.513µs] Transaction prepared
+Nov 22 23:03:56 master1 kube-apiserver[2268]: [503.826519ms] [503.333234ms] Transaction committed
+Nov 22 23:03:56 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Endpoints" [503.882592ms] [56.073µs] END
+Nov 22 23:03:56 master1 kube-apiserver[2268]: I1122 23:03:56.428892    2268 trace.go:61] Trace "Update /api/v1/namespaces/kube-system/endpoints/kube-controller-manager" (started 2017-11-22 23:03:55.924300232 +0800 CST):
+Nov 22 23:03:56 master1 kube-apiserver[2268]: [73.304µs] [73.304µs] About to convert to expected version
+Nov 22 23:03:56 master1 kube-apiserver[2268]: [129.07µs] [55.766µs] Conversion done
+Nov 22 23:03:56 master1 kube-apiserver[2268]: [141.142µs] [12.072µs] About to store object in database
+Nov 22 23:03:56 master1 kube-apiserver[2268]: [504.335469ms] [504.194327ms] Object stored in database
+Nov 22 23:03:56 master1 kube-apiserver[2268]: [504.345868ms] [10.399µs] Self-link added
+Nov 22 23:03:56 master1 kube-apiserver[2268]: "Update /api/v1/namespaces/kube-system/endpoints/kube-controller-manager" [504.505579ms] [159.711µs] END
+Nov 22 23:04:02 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 124.637691ms)[0m
+Nov 22 23:04:02 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:04:02 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 124.75965ms)[0m
+Nov 22 23:04:02 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:04:02 master1 kube-apiserver[2268]: I1122 23:04:02.296441    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Endpoints" (started 2017-11-22 23:04:01.737876618 +0800 CST):
+Nov 22 23:04:02 master1 kube-apiserver[2268]: [85.542µs] [85.542µs] initial value restored
+Nov 22 23:04:02 master1 kube-apiserver[2268]: [328.843µs] [243.301µs] Transaction prepared
+Nov 22 23:04:02 master1 kube-apiserver[2268]: [558.389876ms] [558.061033ms] Transaction committed
+Nov 22 23:04:02 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Endpoints" [558.444994ms] [55.118µs] END
+Nov 22 23:04:02 master1 kube-apiserver[2268]: I1122 23:04:02.296798    2268 trace.go:61] Trace "Update /api/v1/namespaces/kube-system/endpoints/kube-scheduler" (started 2017-11-22 23:04:01.737707358 +0800 CST):
+Nov 22 23:04:02 master1 kube-apiserver[2268]: [39.213µs] [39.213µs] About to convert to expected version
+Nov 22 23:04:02 master1 kube-apiserver[2268]: [80.406µs] [41.193µs] Conversion done
+Nov 22 23:04:02 master1 kube-apiserver[2268]: [89.365µs] [8.959µs] About to store object in database
+Nov 22 23:04:02 master1 kube-apiserver[2268]: [558.783066ms] [558.693701ms] Object stored in database
+Nov 22 23:04:02 master1 kube-apiserver[2268]: [558.795178ms] [12.112µs] Self-link added
+Nov 22 23:04:02 master1 kube-apiserver[2268]: "Update /api/v1/namespaces/kube-system/endpoints/kube-scheduler" [558.99108ms] [195.902µs] END
+Nov 22 23:04:04 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 7.850117ms)[0m
+Nov 22 23:04:04 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:04:04 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 7.968499ms)[0m
+Nov 22 23:04:04 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:04:06 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 3.037172ms)[0m
+Nov 22 23:04:06 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:04:06 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 3.425292ms)[0m
+Nov 22 23:04:06 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:04:06 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 69.239364ms)[0m
+Nov 22 23:04:06 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:04:06 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 69.298334ms)[0m
+Nov 22 23:04:06 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:04:07 master1 kube-apiserver[2268]: I1122 23:04:07.196942    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Node" (started 2017-11-22 23:04:06.451943284 +0800 CST):
+Nov 22 23:04:07 master1 kube-apiserver[2268]: [162.068µs] [162.068µs] initial value restored
+Nov 22 23:04:07 master1 kube-apiserver[2268]: [126.880322ms] [126.718254ms] Transaction prepared
+Nov 22 23:04:07 master1 kube-apiserver[2268]: [744.731483ms] [617.851161ms] Transaction committed
+Nov 22 23:04:07 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Node" [744.91814ms] [186.657µs] END
+Nov 22 23:04:07 master1 etcd[2280]: [1;39mapply entries took too long [180.771334ms for 1 entries][0m
+Nov 22 23:04:07 master1 etcd[2280]: [1;39mavoid queries with large range/delete range![0m
+Nov 22 23:04:07 master1 kube-apiserver[2268]: I1122 23:04:07.517053    2268 trace.go:61] Trace "GuaranteedUpdate etcd3: *api.Endpoints" (started 2017-11-22 23:04:07.001683881 +0800 CST):
+Nov 22 23:04:07 master1 kube-apiserver[2268]: [169.452µs] [169.452µs] initial value restored
+Nov 22 23:04:07 master1 kube-apiserver[2268]: [537.671µs] [368.219µs] Transaction prepared
+Nov 22 23:04:07 master1 kube-apiserver[2268]: [515.198407ms] [514.660736ms] Transaction committed
+Nov 22 23:04:07 master1 kube-apiserver[2268]: "GuaranteedUpdate etcd3: *api.Endpoints" [515.260991ms] [62.584µs] END
+Nov 22 23:04:07 master1 kube-apiserver[2268]: I1122 23:04:07.517474    2268 trace.go:61] Trace "Update /api/v1/namespaces/kube-system/endpoints/kube-controller-manager" (started 2017-11-22 23:04:07.001453034 +0800 CST):
+Nov 22 23:04:07 master1 kube-apiserver[2268]: [42.514µs] [42.514µs] About to convert to expected version
+Nov 22 23:04:07 master1 kube-apiserver[2268]: [90.402µs] [47.888µs] Conversion done
+Nov 22 23:04:07 master1 kube-apiserver[2268]: [104.864µs] [14.462µs] About to store object in database
+Nov 22 23:04:07 master1 kube-apiserver[2268]: [515.6445ms] [515.539636ms] Object stored in database
+Nov 22 23:04:07 master1 kube-apiserver[2268]: [515.653226ms] [8.726µs] Self-link added
+Nov 22 23:04:07 master1 kube-apiserver[2268]: "Update /api/v1/namespaces/kube-system/endpoints/kube-controller-manager" [515.91366ms] [260.434µs] END
+Nov 22 23:04:10 master1 polkitd[811]: [1;39mRegistered Authentication Agent for unix-process:15693:8515531 (system bus name :1.523 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)[0m
+Nov 22 23:04:10 master1 systemd[1]: Starting Docker Storage Setup...
+-- Subject: Unit docker-storage-setup.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit docker-storage-setup.service has begun starting up.
+Nov 22 23:04:11 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 51.448277ms)[0m
+Nov 22 23:04:11 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:04:11 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 52.280342ms)[0m
+Nov 22 23:04:11 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:04:12 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 226.430677ms)[0m
+Nov 22 23:04:12 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:04:12 master1 etcd[2280]: [1;39mfailed to send out heartbeat on time (exceeded the 100ms timeout for 226.623459ms)[0m
+Nov 22 23:04:12 master1 etcd[2280]: [1;39mserver is likely overloaded[0m
+Nov 22 23:04:12 master1 container-storage-setup[15699]: ERROR: Docker has been previously configured for use with devicemapper graph driver. Not creating a new thin pool as existing docker metadata will fail to work with it. Manual cleanup is required before this will succeed.
+Nov 22 23:04:12 master1 container-storage-setup[15699]: INFO: Docker state can be reset by stopping docker and by removing /var/lib/docker directory. This will destroy existing docker images and containers and all the docker metadata.
+Nov 22 23:04:12 master1 systemd[1]: [1;39mdocker-storage-setup.service: main process exited, code=exited, status=1/FAILURE[0m
+Nov 22 23:04:12 master1 systemd[1]: [1;31mFailed to start Docker Storage Setup.[0m
+-- Subject: Unit docker-storage-setup.service has failed
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit docker-storage-setup.service has failed.
+-- 
+-- The result is failed.
+Nov 22 23:04:12 master1 systemd[1]: [1;39mUnit docker-storage-setup.service entered failed state.[0m
+Nov 22 23:04:12 master1 systemd[1]: [1;39mdocker-storage-setup.service failed.[0m
+Nov 22 23:04:12 master1 systemd[1]: Starting Docker Application Container Engine...
+-- Subject: Unit docker.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit docker.service has begun starting up.
+Nov 22 23:04:12 master1 dockerd-current[15743]: time="2017-11-22T23:04:12+08:00" level=fatal msg="unable to configure the Docker daemon with file /etc/docker/daemon.json: invalid character '\"' after object key:value pair\n"
+Nov 22 23:04:12 master1 systemd[1]: [1;39mdocker.service: main process exited, code=exited, status=1/FAILURE[0m
+Nov 22 23:04:12 master1 systemd[1]: [1;31mFailed to start Docker Application Container Engine.[0m
+-- Subject: Unit docker.service has failed
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit docker.service has failed.
+-- 
+-- The result is failed.
+Nov 22 23:04:12 master1 systemd[1]: [1;39mUnit docker.service entered failed state.[0m
+Nov 22 23:04:12 master1 systemd[1]: [1;39mdocker.service failed.[0m
+Nov 22 23:04:12 master1 polkitd[811]: [1;39mUnregistered Authentication Agent for unix-process:15693:8515531 (system bus name :1.523, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)[0m
+Nov 22 23:04:14 master1 etcd[2280]: [1;39mapply entries took too long [287.894706ms for 2 entries][0m
+Nov 22 23:04:14 master1 etcd[2280]: [1;39mavoid queries with large range/delete range![0m
+Nov 22 23:04:14 master1 kube-apiserver[2268]: I1122 23:04:14.719038    2268 trace.go:61] Trace "List /api/v1/nodes" (started 2017-11-22 23:04:13.978530406 +0800 CST):
+Nov 22 23:04:14 master1 kube-apiserver[2268]: [18.294µs] [18.294µs] About to List from storage
+Nov 22 23:04:14 master1 kube-apiserver[2268]: [739.73241ms] [739.714116ms] Listing from storage done
+Nov 22 23:04:14 master1 kube-apiserver[2268]: [739.76785ms] [35.44µs] Self-linking done
+Nov 22 23:04:14 master1 kube-apiserver[2268]: [740.384499ms] [616.649µs] Writing http response done (2 items)
+Nov 22 23:04:14 master1 kube-apiserver[2268]: "List /api/v1/nodes" [740.386937ms] [2.438µs] END

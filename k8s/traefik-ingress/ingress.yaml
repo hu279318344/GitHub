@@ -1,0 +1,37 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: ingress
+  namespace: default
+  annotations:
+    kubernetes.io/ingress.class: traefik
+spec:
+  rules:
+  - host: rap.parkingwang.com
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: rap
+          servicePort: 8081
+  - host: nginx.galen.site
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: nginx
+          servicePort: 80
+  - host: rabbitmq.galen.site
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: rabbitmq
+          servicePort: 15672
+  - host: reg.galen.site
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: reg
+          servicePort: 8686

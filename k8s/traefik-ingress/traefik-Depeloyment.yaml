@@ -1,0 +1,48 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: traefik-ingress-lb
+  namespace: kube-system
+  labels:
+    k8s-app: traefik-ingress-lb
+spec:
+  template:
+    metadata:
+      labels:
+        k8s-app: traefik-ingress-lb
+        name: traefik-ingress-lb
+    spec:
+      terminationGracePeriodSeconds: 60
+      hostNetwork: true
+      restartPolicy: Always
+      serviceAccountName: ingress
+      containers:
+      - image: registry.cn-hangzhou.aliyuncs.com/hu279318344/traefik:v1.5.0-rc4
+        name: traefik-ingress-lb
+        resources:
+          limits:
+            cpu: 200m
+            memory: 30Mi
+          requests:
+            cpu: 100m
+            memory: 20Mi
+        volumeMounts:
+        - mountPath: "/log"
+          name: "log"
+        ports:
+        - name: http
+          containerPort: 80
+          hostPort: 80
+        - name: admin
+          containerPort: 8580
+          hostPort: 8580
+        args:
+        - --web
+        - --kubernetes
+        - --logLevel=DEBUG
+        - --web.address=:8580
+       volumes:
+       - name: log
+         hostPath:
+           path: /var/log/traefik
+           type: Directory

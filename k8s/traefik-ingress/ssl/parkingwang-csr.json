@@ -1,0 +1,20 @@
+{
+"CN": "parkingwang",
+"hosts": [
+"*.parkingwang.com",
+""
+],
+"key": {
+"algo": "rsa",
+"size": 2048
+},
+"names": [
+{
+"C": "CN",
+"ST": "ShanXi",
+"L": "ShanXi",
+"O": "irain",
+"OU": "IRAIN"
+}
+]
+}
